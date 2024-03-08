@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Scegli un nome per la tua stanza o selezionane uno suggerito da noi."; ObjectID = "1tF-QF-xHQ"; */
+"1tF-QF-xHQ.text" = "Choose a name for your room or select one suggested by us.";
+
+/* Class = "UILabel"; text = "Nome stanza"; ObjectID = "6kN-eu-qIQ"; */
+"6kN-eu-qIQ.text" = "Room name";
+
+/* Class = "UITextField"; placeholder = "Nome stanza"; ObjectID = "Ad4-gI-iKp"; */
+"Ad4-gI-iKp.placeholder" = "Room name";
+
+/* Class = "UITextField"; text = "Salotto"; ObjectID = "Ad4-gI-iKp"; */
+"Ad4-gI-iKp.text" = "Living room";
+
+/* Class = "UILabel"; text = "SUGGERIMENTI"; ObjectID = "LlT-l5-cN5"; */
+"LlT-l5-cN5.text" = "SUGGESTIONS";
+
+/* Class = "UILabel"; text = "Aggiungi una stanza per inserire i tuoi \ndispositivi Innova!"; ObjectID = "UTo-me-dQU"; */
+"UTo-me-dQU.text" = "Add a room to add your Innova devices!";
+
+/* Class = "UIButton"; normalTitle = "Aggiungi"; ObjectID = "tln-0O-kSK"; */
+"tln-0O-kSK.normalTitle" = "Add";

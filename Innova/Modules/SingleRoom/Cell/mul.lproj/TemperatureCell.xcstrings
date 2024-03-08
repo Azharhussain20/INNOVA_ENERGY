@@ -1,0 +1,42 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "aoA-FE-Lwp.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"20.5°\"; ObjectID = \"aoA-FE-Lwp\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "20.5°"
+          }
+        }
+      }
+    },
+    "OAJ-ja-K1t.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Salotto - 16°\"; ObjectID = \"OAJ-ja-K1t\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Salotto - 16°"
+          }
+        }
+      }
+    },
+    "ZwW-mn-GVC.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Device\"; ObjectID = \"ZwW-mn-GVC\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Device"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

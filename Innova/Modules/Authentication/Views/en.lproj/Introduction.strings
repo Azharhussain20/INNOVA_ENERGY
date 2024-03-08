@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "Add a home"; ObjectID = "24L-wm-2O8"; */
+"24L-wm-2O8.text" = "Add a home";
+
+/* Class = "UILabel"; text = "Home name"; ObjectID = "2hU-tO-M87"; */
+"2hU-tO-M87.text" = "Home name";
+
+/* Class = "UITextField"; placeholder = "Home name"; ObjectID = "4qN-s5-N2I"; */
+"4qN-s5-N2I.placeholder" = "Home name";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "CJU-wn-bAO"; */
+"CJU-wn-bAO.normalTitle" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Fatti invitare"; ObjectID = "Ey1-BG-R7r"; */
+"Ey1-BG-R7r.normalTitle" = "Get invited";
+
+/* Class = "UIButton"; normalTitle = "Save home"; ObjectID = "F31-9K-A2v"; */
+"F31-9K-A2v.normalTitle" = "Save home";
+
+/* Class = "UIButton"; normalTitle = "Continue with Google"; ObjectID = "MW0-OU-NPa"; */
+"MW0-OU-NPa.normalTitle" = "Continue with Google";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "cwi-Sv-BrJ"; */
+"cwi-Sv-BrJ.normalTitle" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Continue with Apple"; ObjectID = "efo-Ke-cZq"; */
+"efo-Ke-cZq.normalTitle" = "Continue with Apple";
+
+/* Class = "UILabel"; text = "Welcome to Innova! To start using the app,\nyou need to create a home or be invited to an existing home"; ObjectID = "nkW-L6-khu"; */
+"nkW-L6-khu.text" = "Welcome to Innova! To start using the app,\nyou need to create a home or be invited to an existing home";

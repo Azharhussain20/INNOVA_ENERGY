@@ -1,0 +1,3 @@
+#  Clarifications
+
+In our application, we rely heavily on stack views to facilitate seamless show/hide functionality with minimal effort, achieved through a straightforward single-line command (component.isHidden = true). This approach significantly streamlines the management of nested views within the stack view, as it automatically handles constraints on all four sides. The decision to nest components within a view placed inside stack views was driven by the need for easier constraint management within the stack view itself. This design choice ensures that our layout remains flexible and easily maintainable as we continue to develop and enhance our application.

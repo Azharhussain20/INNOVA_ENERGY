@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "Add a device"; ObjectID = "11y-wx-B2v"; */
+"11y-wx-B2v.normalTitle" = "Aggiungi un dispositivo";
+
+/* Class = "UITabBarItem"; title = "Item 1"; ObjectID = "5oK-9d-vGV"; */
+"5oK-9d-vGV.title" = "Item 1";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "JpP-He-lwy"; */
+"JpP-He-lwy.text" = "Profilo";
+
+/* Class = "UITabBarItem"; title = "Item 1"; ObjectID = "MIJ-Lv-GQd"; */
+"MIJ-Lv-GQd.title" = "Item 1";
+
+/* Class = "UILabel"; text = "It seems that there are no devices in this house."; ObjectID = "Nqt-7B-jbn"; */
+"Nqt-7B-jbn.text" = "Sembra che in questa casa non ci siano dispositivi.";
+
+/* Class = "UIButton"; normalTitle = "Add a room"; ObjectID = "gLg-dJ-So4"; */
+"gLg-dJ-So4.normalTitle" = "Aggiungi una stanza";
+
+/* Class = "UITabBarItem"; title = "Item 1"; ObjectID = "hjN-Nh-Ygj"; */
+"hjN-Nh-Ygj.title" = "Item 1";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "u79-gG-a1h"; */
+"u79-gG-a1h.title" = "Profilo";

@@ -1,0 +1,126 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "2hU-tO-M87.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Nome casa\"; ObjectID = \"2hU-tO-M87\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Nome casa"
+          }
+        }
+      }
+    },
+    "4qN-s5-N2I.placeholder" : {
+      "comment" : "Class = \"UITextField\"; placeholder = \"Text\"; ObjectID = \"4qN-s5-N2I\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Text"
+          }
+        }
+      }
+    },
+    "24L-wm-2O8.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Aggiungi una casa\"; ObjectID = \"24L-wm-2O8\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Aggiungi una casa"
+          }
+        }
+      }
+    },
+    "CJU-wn-bAO.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Accedi\"; ObjectID = \"CJU-wn-bAO\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Accedi"
+          }
+        }
+      }
+    },
+    "cwi-Sv-BrJ.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Registrati\"; ObjectID = \"cwi-Sv-BrJ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Registrati"
+          }
+        }
+      }
+    },
+    "efo-Ke-cZq.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Continua con Apple\"; ObjectID = \"efo-Ke-cZq\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Continua con Apple"
+          }
+        }
+      }
+    },
+    "Ey1-BG-R7r.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Fatti invitare\"; ObjectID = \"Ey1-BG-R7r\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Fatti invitare"
+          }
+        }
+      }
+    },
+    "F31-9K-A2v.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Salva casa\"; ObjectID = \"F31-9K-A2v\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Salva casa"
+          }
+        }
+      }
+    },
+    "MW0-OU-NPa.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Continua con Google\"; ObjectID = \"MW0-OU-NPa\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Continua con Google"
+          }
+        }
+      }
+    },
+    "nkW-L6-khu.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Benvenuto in Innova! Per iniziare ad usare l’app\\ndevi creare una casa o farti invitare in una casa \\ngià esistente.\"; ObjectID = \"nkW-L6-khu\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Benvenuto in Innova! Per iniziare ad usare l’app\ndevi creare una casa o farti invitare in una casa \ngià esistente."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

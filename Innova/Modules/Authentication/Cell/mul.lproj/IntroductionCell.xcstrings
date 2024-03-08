@@ -1,0 +1,18 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "d2q-vW-Ofa.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Regola la temperatura, programma l’accensione dei dispositivi... e tanto altro!\"; ObjectID = \"d2q-vW-Ofa\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Regola la temperatura, programma l’accensione dei dispositivi... e tanto altro!"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

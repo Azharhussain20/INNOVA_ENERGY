@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SuggestionsCell" id="RIb-in-1Tx" customClass="SuggestionsCell" customModule="Innova" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RIb-in-1Tx" id="AFa-jZ-u8d">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaA-XT-0ze">
+                        <rect key="frame" x="16" y="56" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="466-n8-sWJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IN12345678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R90-AD-Rx8">
+                        <rect key="frame" x="16" y="0.0" width="288" height="56"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" name="TitleBlack"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="Gray5"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="SaA-XT-0ze" secondAttribute="bottom" id="3gJ-Lo-WzP"/>
+                    <constraint firstAttribute="trailing" secondItem="SaA-XT-0ze" secondAttribute="trailing" id="4ur-34-MZz"/>
+                    <constraint firstItem="SaA-XT-0ze" firstAttribute="top" secondItem="R90-AD-Rx8" secondAttribute="bottom" id="9Jj-sl-gn5"/>
+                    <constraint firstAttribute="trailing" secondItem="R90-AD-Rx8" secondAttribute="trailing" constant="16" id="KM5-NO-jA7"/>
+                    <constraint firstItem="SaA-XT-0ze" firstAttribute="leading" secondItem="AFa-jZ-u8d" secondAttribute="leading" constant="16" id="LYV-tE-iTc"/>
+                    <constraint firstItem="R90-AD-Rx8" firstAttribute="leading" secondItem="AFa-jZ-u8d" secondAttribute="leading" constant="16" id="NCO-3z-iTF"/>
+                    <constraint firstItem="R90-AD-Rx8" firstAttribute="top" secondItem="AFa-jZ-u8d" secondAttribute="top" id="tEA-BP-S8U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="GKi-Hx-meq"/>
+            <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="lblSuggestions" destination="R90-AD-Rx8" id="H8I-d3-Mx4"/>
+                <outlet property="seperator" destination="SaA-XT-0ze" id="hVa-pn-mnm"/>
+            </connections>
+            <point key="canvasLocation" x="43" y="18"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Gray5">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

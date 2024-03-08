@@ -1,0 +1,90 @@
+
+/* Class = "UILabel"; text = "MODALITÀ FUNZIONAMENTO"; ObjectID = "0wk-Hd-gWS"; */
+"0wk-Hd-gWS.text" = "OPERATING MODE";
+
+/* Class = "UILabel"; text = "mario@email.com"; ObjectID = "4rr-kY-20t"; */
+"4rr-kY-20t.text" = "mario@email.com";
+
+/* Class = "UIButton"; normalTitle = "Salva modifiche"; ObjectID = "7Zm-VS-AGM"; */
+"7Zm-VS-AGM.normalTitle" = "Save changes";
+
+/* Class = "UITextField"; placeholder = "Nome casa"; ObjectID = "8AB-yX-uAg"; */
+"8AB-yX-uAg.placeholder" = "Home name";
+
+/* Class = "UITextField"; text = "Casa di Mario"; ObjectID = "8AB-yX-uAg"; */
+"8AB-yX-uAg.text" = "Mario's home";
+
+/* Class = "UIButton"; configuration.title = "Aggiungi una stanza"; ObjectID = "FXo-Hk-t8f"; */
+"FXo-Hk-t8f.configuration.title" = "Add a room";
+
+/* Class = "UIButton"; normalTitle = "Aggiungi una stanza"; ObjectID = "FXo-Hk-t8f"; */
+"FXo-Hk-t8f.normalTitle" = "Add a room";
+
+/* Class = "UIButton"; normalTitle = "Lascia questa casa"; ObjectID = "Fe1-j8-kHS"; */
+"Fe1-j8-kHS.normalTitle" = "Leave this home";
+
+/* Class = "UILabel"; text = "Non puoi modificare il tuo ruolo perché sei il proprietario di questa casa. "; ObjectID = "H1Z-hv-ZjB"; */
+"H1Z-hv-ZjB.text" = "You cannot change your role because you are the owner of this home.";
+
+/* Class = "UILabel"; text = "STANZE"; ObjectID = "IIp-Ak-087"; */
+"IIp-Ak-087.text" = "ROOMS";
+
+/* Class = "UILabel"; text = "MODIFICA RUOLO"; ObjectID = "NYL-oN-r3M"; */
+"NYL-oN-r3M.text" = "CHANGE ROLE";
+
+/* Class = "UILabel"; text = "Indirizzo"; ObjectID = "PlD-at-s4P"; */
+"PlD-at-s4P.text" = "Address";
+
+/* Class = "UILabel"; text = "Innova chiede il consenso di poter rilevare la tua posizione per offrirti informazioni specifiche relative alla tua casa."; ObjectID = "QZS-2H-2sJ"; */
+"QZS-2H-2sJ.text" = "Innova asks for consent to detect your location in order to offer you specific information about your home.";
+
+/* Class = "UIButton"; configuration.title = "Riordina"; ObjectID = "So7-kR-BOq"; */
+"So7-kR-BOq.configuration.title" = "Reorder";
+
+/* Class = "UIButton"; normalTitle = "Riordina"; ObjectID = "So7-kR-BOq"; */
+"So7-kR-BOq.normalTitle" = "Reorder";
+
+/* Class = "UILabel"; text = "Non ci sono suggerimenti disponibili per la tua ricerca"; ObjectID = "XNI-wZ-50s"; */
+"XNI-wZ-50s.text" = "There are no suggestions available for your search";
+
+/* Class = "UILabel"; text = "Posizione"; ObjectID = "XXj-fN-6qH"; */
+"XXj-fN-6qH.text" = "Location";
+
+/* Class = "UILabel"; text = "Proprietario - Io"; ObjectID = "btv-CM-gVq"; */
+"btv-CM-gVq.text" = "Owner - Me";
+
+/* Class = "UIButton"; normalTitle = "Trasferisci questa proprietà"; ObjectID = "egT-FU-LW9"; */
+"egT-FU-LW9.normalTitle" = "Transfer this property";
+
+/* Class = "UITextField"; placeholder = "Posizione"; ObjectID = "fWF-9R-3Ov"; */
+"fWF-9R-3Ov.placeholder" = "Location";
+
+/* Class = "UITextField"; text = "Trento"; ObjectID = "fWF-9R-3Ov"; */
+"fWF-9R-3Ov.text" = "Trento";
+
+/* Class = "UILabel"; text = "Posizione attuale rilevata dal tuo dispositivo. "; ObjectID = "iwG-bY-ycf"; */
+"iwG-bY-ycf.text" = "Current location detected by your device.";
+
+/* Class = "UILabel"; text = "Nome casa"; ObjectID = "j1e-kI-hIW"; */
+"j1e-kI-hIW.text" = "Home name";
+
+/* Class = "UIButton"; normalTitle = "Elimina questa casa"; ObjectID = "jlv-LS-PGB"; */
+"jlv-LS-PGB.normalTitle" = "Delete this home";
+
+/* Class = "UIButton"; configuration.title = "Invita persone..."; ObjectID = "mTw-Rq-u4v"; */
+"mTw-Rq-u4v.configuration.title" = "Invite people...";
+
+/* Class = "UIButton"; normalTitle = "Invita persone..."; ObjectID = "mTw-Rq-u4v"; */
+"mTw-Rq-u4v.normalTitle" = "Invite people...";
+
+/* Class = "UITextField"; placeholder = "Indirizzo"; ObjectID = "mg0-cg-rBh"; */
+"mg0-cg-rBh.placeholder" = "Address";
+
+/* Class = "UITextField"; text = "Via Vittorio Veneto ..."; ObjectID = "mg0-cg-rBh"; */
+"mg0-cg-rBh.text" = "Vittorio Veneto Street ...";
+
+/* Class = "UILabel"; text = "PERSONE"; ObjectID = "vuS-xM-Lkd"; */
+"vuS-xM-Lkd.text" = "PEOPLE";
+
+/* Class = "UILabel"; text = "Proprietario"; ObjectID = "xZL-GV-R7p"; */
+"xZL-GV-R7p.text" = "Owner";

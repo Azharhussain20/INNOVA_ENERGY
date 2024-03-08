@@ -1,0 +1,90 @@
+
+/* Class = "UILabel"; text = "MODALITÀ FUNZIONAMENTO"; ObjectID = "0wk-Hd-gWS"; */
+"0wk-Hd-gWS.text" = "MODALITÀ FUNZIONAMENTO";
+
+/* Class = "UILabel"; text = "mario@email.com"; ObjectID = "4rr-kY-20t"; */
+"4rr-kY-20t.text" = "mario@email.com";
+
+/* Class = "UIButton"; normalTitle = "Salva modifiche"; ObjectID = "7Zm-VS-AGM"; */
+"7Zm-VS-AGM.normalTitle" = "Salva modifiche";
+
+/* Class = "UITextField"; placeholder = "Nome casa"; ObjectID = "8AB-yX-uAg"; */
+"8AB-yX-uAg.placeholder" = "Nome casa";
+
+/* Class = "UITextField"; text = "Casa di Mario"; ObjectID = "8AB-yX-uAg"; */
+"8AB-yX-uAg.text" = "Casa di Mario";
+
+/* Class = "UIButton"; configuration.title = "Aggiungi una stanza"; ObjectID = "FXo-Hk-t8f"; */
+"FXo-Hk-t8f.configuration.title" = "Aggiungi una stanza";
+
+/* Class = "UIButton"; normalTitle = "Aggiungi una stanza"; ObjectID = "FXo-Hk-t8f"; */
+"FXo-Hk-t8f.normalTitle" = "Aggiungi una stanza";
+
+/* Class = "UIButton"; normalTitle = "Lascia questa casa"; ObjectID = "Fe1-j8-kHS"; */
+"Fe1-j8-kHS.normalTitle" = "Lascia questa casa";
+
+/* Class = "UILabel"; text = "Non puoi modificare il tuo ruolo perché sei il proprietario di questa casa. "; ObjectID = "H1Z-hv-ZjB"; */
+"H1Z-hv-ZjB.text" = "Non puoi modificare il tuo ruolo perché sei il proprietario di questa casa. ";
+
+/* Class = "UILabel"; text = "STANZE"; ObjectID = "IIp-Ak-087"; */
+"IIp-Ak-087.text" = "STANZE";
+
+/* Class = "UILabel"; text = "MODIFICA RUOLO"; ObjectID = "NYL-oN-r3M"; */
+"NYL-oN-r3M.text" = "MODIFICA RUOLO";
+
+/* Class = "UILabel"; text = "Indirizzo"; ObjectID = "PlD-at-s4P"; */
+"PlD-at-s4P.text" = "Indirizzo";
+
+/* Class = "UILabel"; text = "Innova chiede il consenso di poter rilevare la tua posizione per offrirti informazioni specifiche relative alla tua casa."; ObjectID = "QZS-2H-2sJ"; */
+"QZS-2H-2sJ.text" = "Innova chiede il consenso di poter rilevare la tua posizione per offrirti informazioni specifiche relative alla tua casa.";
+
+/* Class = "UIButton"; configuration.title = "Riordina"; ObjectID = "So7-kR-BOq"; */
+"So7-kR-BOq.configuration.title" = "Riordina";
+
+/* Class = "UIButton"; normalTitle = "Riordina"; ObjectID = "So7-kR-BOq"; */
+"So7-kR-BOq.normalTitle" = "Riordina";
+
+/* Class = "UILabel"; text = "Non ci sono suggerimenti disponibili per la tua ricerca"; ObjectID = "XNI-wZ-50s"; */
+"XNI-wZ-50s.text" = "Non ci sono suggerimenti disponibili per la tua ricerca";
+
+/* Class = "UILabel"; text = "Posizione"; ObjectID = "XXj-fN-6qH"; */
+"XXj-fN-6qH.text" = "Posizione";
+
+/* Class = "UILabel"; text = "Proprietario - Io"; ObjectID = "btv-CM-gVq"; */
+"btv-CM-gVq.text" = "Proprietario - Io";
+
+/* Class = "UIButton"; normalTitle = "Trasferisci questa proprietà"; ObjectID = "egT-FU-LW9"; */
+"egT-FU-LW9.normalTitle" = "Trasferisci questa proprietà";
+
+/* Class = "UITextField"; placeholder = "Posizione"; ObjectID = "fWF-9R-3Ov"; */
+"fWF-9R-3Ov.placeholder" = "Posizione";
+
+/* Class = "UITextField"; text = "Trento"; ObjectID = "fWF-9R-3Ov"; */
+"fWF-9R-3Ov.text" = "Trento";
+
+/* Class = "UILabel"; text = "Posizione attuale rilevata dal tuo dispositivo. "; ObjectID = "iwG-bY-ycf"; */
+"iwG-bY-ycf.text" = "Posizione attuale rilevata dal tuo dispositivo. ";
+
+/* Class = "UILabel"; text = "Nome casa"; ObjectID = "j1e-kI-hIW"; */
+"j1e-kI-hIW.text" = "Nome casa";
+
+/* Class = "UIButton"; normalTitle = "Elimina questa casa"; ObjectID = "jlv-LS-PGB"; */
+"jlv-LS-PGB.normalTitle" = "Elimina questa casa";
+
+/* Class = "UIButton"; configuration.title = "Invita persone..."; ObjectID = "mTw-Rq-u4v"; */
+"mTw-Rq-u4v.configuration.title" = "Invita persone...";
+
+/* Class = "UIButton"; normalTitle = "Invita persone..."; ObjectID = "mTw-Rq-u4v"; */
+"mTw-Rq-u4v.normalTitle" = "Invita persone...";
+
+/* Class = "UITextField"; placeholder = "Indirizzo"; ObjectID = "mg0-cg-rBh"; */
+"mg0-cg-rBh.placeholder" = "Indirizzo";
+
+/* Class = "UITextField"; text = "Via Vittorio Veneto ..."; ObjectID = "mg0-cg-rBh"; */
+"mg0-cg-rBh.text" = "Via Vittorio Veneto ...";
+
+/* Class = "UILabel"; text = "PERSONE"; ObjectID = "vuS-xM-Lkd"; */
+"vuS-xM-Lkd.text" = "PERSONE";
+
+/* Class = "UILabel"; text = "Proprietario"; ObjectID = "xZL-GV-R7p"; */
+"xZL-GV-R7p.text" = "Proprietario";

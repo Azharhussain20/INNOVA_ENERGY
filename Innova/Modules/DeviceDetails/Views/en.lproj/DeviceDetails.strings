@@ -1,0 +1,90 @@
+
+/* Class = "UIButton"; normalTitle = "Conferma"; ObjectID = "0PV-AX-7x8"; */
+"0PV-AX-7x8.normalTitle" = "Confirm";
+
+/* Class = "UILabel"; text = "Temperatura interna:"; ObjectID = "0VR-5E-6HC"; */
+"0VR-5E-6HC.text" = "Internal temperature:";
+
+/* Class = "UILabel"; text = "INFORMAZIONI"; ObjectID = "0oI-wg-AUL"; */
+"0oI-wg-AUL.text" = "INFORMATION";
+
+/* Class = "UILabel"; text = "True temperature"; ObjectID = "6OO-Oz-7c3"; */
+"6OO-Oz-7c3.text" = "True temperature";
+
+/* Class = "UITextField"; placeholder = "Dipositivo"; ObjectID = "7HF-05-KKT"; */
+"7HF-05-KKT.placeholder" = "Device";
+
+/* Class = "UITextField"; text = "Device 1"; ObjectID = "7HF-05-KKT"; */
+"7HF-05-KKT.text" = "Device 1";
+
+/* Class = "UILabel"; text = "MODE"; ObjectID = "9xW-lu-58N"; */
+"9xW-lu-58N.text" = "MODE";
+
+/* Class = "UITextField"; placeholder = "Indirizzo"; ObjectID = "C2t-mn-1Ay"; */
+"C2t-mn-1Ay.placeholder" = "Address";
+
+/* Class = "UITextField"; text = "Salotto"; ObjectID = "C2t-mn-1Ay"; */
+"C2t-mn-1Ay.text" = "Living room";
+
+/* Class = "UILabel"; text = "Programma l’impostazione manuale per:"; ObjectID = "HQZ-E6-kO6"; */
+"HQZ-E6-kO6.text" = "Program the manual setting for:";
+
+/* Class = "UILabel"; text = "Dispositivo"; ObjectID = "NkW-cu-8MB"; */
+"NkW-cu-8MB.text" = "Device";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "UA0-3R-AUl"; */
+"UA0-3R-AUl.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Salotto"; ObjectID = "UeQ-VF-QbB"; */
+"UeQ-VF-QbB.text" = "Living room";
+
+/* Class = "UIButton"; normalTitle = "Annulla"; ObjectID = "Xgv-86-TMt"; */
+"Xgv-86-TMt.normalTitle" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Off"; ObjectID = "Yat-Xz-tlr"; */
+"Yat-Xz-tlr.normalTitle" = "Off";
+
+/* Class = "UILabel"; text = "22°"; ObjectID = "ZTC-4A-Ko1"; */
+"ZTC-4A-Ko1.text" = "22°";
+
+/* Class = "UILabel"; text = "Fan mode"; ObjectID = "bqs-Sf-IKe"; */
+"bqs-Sf-IKe.text" = "Fan mode";
+
+/* Class = "UILabel"; text = "True temperature"; ObjectID = "c2c-8f-eqV"; */
+"c2c-8f-eqV.text" = "True temperature";
+
+/* Class = "UILabel"; text = "Stanza:"; ObjectID = "cMD-AW-tIG"; */
+"cMD-AW-tIG.text" = "Room:";
+
+/* Class = "UILabel"; text = "Flap"; ObjectID = "dzc-XQ-V9i"; */
+"dzc-XQ-V9i.text" = "Flap";
+
+/* Class = "UIButton"; normalTitle = "Conferma"; ObjectID = "guI-hD-QzO"; */
+"guI-hD-QzO.normalTitle" = "Confirm";
+
+/* Class = "UILabel"; text = "22.0°C"; ObjectID = "jWl-Vf-eSg"; */
+"jWl-Vf-eSg.text" = "22.0°C";
+
+/* Class = "UIButton"; normalTitle = "Annulla"; ObjectID = "jzA-CA-eXT"; */
+"jzA-CA-eXT.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Il dispositivo è in standby"; ObjectID = "kYi-B9-6j3"; */
+"kYi-B9-6j3.text" = "The device is on standby";
+
+/* Class = "UIButton"; normalTitle = "Rimuovi dispositivo"; ObjectID = "ljE-M3-QZv"; */
+"ljE-M3-QZv.normalTitle" = "Remove device";
+
+/* Class = "UIButton"; normalTitle = "Resetta impostazioni"; ObjectID = "oS5-sz-SKZ"; */
+"oS5-sz-SKZ.normalTitle" = "Reset settings";
+
+/* Class = "UILabel"; text = "alle"; ObjectID = "osZ-fn-A1d"; */
+"osZ-fn-A1d.text" = "to";
+
+/* Class = "UILabel"; text = "dalle"; ObjectID = "vuT-ir-IfY"; */
+"vuT-ir-IfY.text" = "from";
+
+/* Class = "UILabel"; text = "Stanza"; ObjectID = "ykB-iB-k16"; */
+"ykB-iB-k16.text" = "Room";
+
+/* Class = "UILabel"; text = "Temperatura"; ObjectID = "zXm-Du-z5H"; */
+"zXm-Du-z5H.text" = "Temperature";

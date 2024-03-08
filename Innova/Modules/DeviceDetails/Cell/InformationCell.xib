@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="InformationCell" id="KGk-i7-Jjw" customClass="InformationCell" customModule="Innova" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugb-sE-jgG">
+                        <rect key="frame" x="16" y="0.0" width="144" height="44"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" name="TitleBlack"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I38-fA-tLs">
+                        <rect key="frame" x="160" y="0.0" width="144" height="44"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" name="DarkGray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogd-7k-8pD">
+                        <rect key="frame" x="16" y="43" width="304" height="1"/>
+                        <color key="backgroundColor" name="Gray2"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="RaN-ix-uRU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" name="Gray2"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="Gray5"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="I38-fA-tLs" secondAttribute="trailing" constant="16" id="77p-qf-Sex"/>
+                    <constraint firstAttribute="bottom" secondItem="Ogd-7k-8pD" secondAttribute="bottom" id="9tm-aq-20G"/>
+                    <constraint firstAttribute="trailing" secondItem="Ogd-7k-8pD" secondAttribute="trailing" id="BV4-Sx-bJn"/>
+                    <constraint firstItem="ugb-sE-jgG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Bpk-az-fKJ"/>
+                    <constraint firstItem="I38-fA-tLs" firstAttribute="leading" secondItem="ugb-sE-jgG" secondAttribute="trailing" id="MrX-0K-pGj"/>
+                    <constraint firstAttribute="bottom" secondItem="ugb-sE-jgG" secondAttribute="bottom" id="YaW-E4-dqk"/>
+                    <constraint firstItem="I38-fA-tLs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cj4-vI-fAc"/>
+                    <constraint firstItem="ugb-sE-jgG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kBS-Pg-DIR"/>
+                    <constraint firstItem="ugb-sE-jgG" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.45" id="nr5-2e-6go"/>
+                    <constraint firstItem="Ogd-7k-8pD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="sIk-AR-nTO"/>
+                    <constraint firstAttribute="bottom" secondItem="I38-fA-tLs" secondAttribute="bottom" id="u8m-hk-I0k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTitle" destination="ugb-sE-jgG" id="VQu-uQ-1Ty"/>
+                <outlet property="lblValue" destination="I38-fA-tLs" id="dhz-EM-Eog"/>
+                <outlet property="seperator" destination="Ogd-7k-8pD" id="97K-Ax-dgf"/>
+            </connections>
+            <point key="canvasLocation" x="59.541984732824424" y="17.605633802816904"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="DarkGray">
+            <color red="0.38823529411764707" green="0.396078431372549" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray2">
+            <color red="0.792156862745098" green="0.792156862745098" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray5">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

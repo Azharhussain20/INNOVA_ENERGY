@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "20°"; ObjectID = "0zn-I1-e0X"; */
+"0zn-I1-e0X.text" = "20°";
+
+/* Class = "UILabel"; text = "LE TUE STANZE"; ObjectID = "5bk-HS-NT3"; */
+"5bk-HS-NT3.text" = "LE TUE STANZE";
+
+/* Class = "UILabel"; text = "Nessuna stanza"; ObjectID = "6Ge-iL-c5h"; */
+"6Ge-iL-c5h.text" = "Nessuna stanza";
+
+/* Class = "UILabel"; text = "Nome stanza"; ObjectID = "7o8-fG-TtG"; */
+"7o8-fG-TtG.text" = "Nome stanza";
+
+/* Class = "UILabel"; text = "Sposta il tuo dispositivo in una delle tue stanze  già esistenti, oppure creane una nuova."; ObjectID = "8Cm-Ml-noK"; */
+"8Cm-Ml-noK.text" = "Sposta il tuo dispositivo in una delle tue stanze  già esistenti, oppure creane una nuova.";
+
+/* Class = "UILabel"; text = "CREA UNA NUOVA STANZA"; ObjectID = "Cgw-qP-mIq"; */
+"Cgw-qP-mIq.text" = "CREA UNA NUOVA STANZA";
+
+/* Class = "UITextField"; placeholder = "Nome stanza"; ObjectID = "DIN-k7-rmG"; */
+"DIN-k7-rmG.placeholder" = "Nome stanza";
+
+/* Class = "UILabel"; text = "oppure"; ObjectID = "Skk-GI-E0D"; */
+"Skk-GI-E0D.text" = "oppure";
+
+/* Class = "UILabel"; text = "Temperatura interna:"; ObjectID = "V9J-zX-68z"; */
+"V9J-zX-68z.text" = "Temperatura interna:";
+
+/* Class = "UIButton"; normalTitle = "Sposta"; ObjectID = "Xhv-I8-zGH"; */
+"Xhv-I8-zGH.normalTitle" = "Sposta";
+
+/* Class = "UIButton"; normalTitle = "Aggiungi un dispositivo"; ObjectID = "oCb-iG-Pgu"; */
+"oCb-iG-Pgu.normalTitle" = "Aggiungi un dispositivo";
