@@ -1,6 +1,5 @@
 import UIKit
 import IQKeyboardManagerSwift
-import SwiftMessages
 var AppInstance: AppDelegate!
 let APPLE_LANGUAGE_KEY = "AppleLanguages"
 private var kBundleKey: UInt8 = 0

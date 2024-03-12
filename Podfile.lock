@@ -1,26 +1,20 @@
 PODS:
   - DropDown (2.3.13)
   - IQKeyboardManagerSwift (6.5.16)
-  - SwiftMessages (9.0.9):
-    - SwiftMessages/App (= 9.0.9)
-  - SwiftMessages/App (9.0.9)
 
 DEPENDENCIES:
   - DropDown
   - IQKeyboardManagerSwift
-  - SwiftMessages
 
 SPEC REPOS:
   trunk:
     - DropDown
     - IQKeyboardManagerSwift
-    - SwiftMessages
 
 SPEC CHECKSUMS:
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
-  SwiftMessages: 1a23aef303fa7bb26ad802880746cf8358e378fe
 
-PODFILE CHECKSUM: a401422ad919a80709791303f082633b6cc1125f
+PODFILE CHECKSUM: 403e53d4a7426d593f2e631c7de920c7b5bc6725
 
 COCOAPODS: 1.15.0
