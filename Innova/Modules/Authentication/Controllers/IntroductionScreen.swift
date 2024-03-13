@@ -10,8 +10,8 @@ class IntroductionScreen: UIViewController {
     @IBOutlet weak var introductionCollection: UICollectionView!
     @IBOutlet weak var btnLoginWithGoogle: WhiteButtonWithImage!
     @IBOutlet weak var btnLoginWithApple: WhiteButtonWithImage!
-    @IBOutlet weak var btnRegistration: GreenThemeButton!
-    @IBOutlet weak var btnLogin: PlainTextButton!
+    @IBOutlet weak var btnLogin: GreenThemeButton!
+    @IBOutlet weak var btnRegistration: PlainTextButton!
     @IBOutlet weak var pageControl: UIPageControl!
     
     //------------------------------------------

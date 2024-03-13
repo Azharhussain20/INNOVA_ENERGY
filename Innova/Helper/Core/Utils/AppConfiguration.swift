@@ -23,5 +23,4 @@ class AppConfiguration: NSObject {
         appColors = AppColors()
         appFonts = AppFonts()
     }
-    
 }

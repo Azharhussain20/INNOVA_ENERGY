@@ -102,10 +102,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnLogin" destination="cwi-Sv-BrJ" id="C50-QJ-xRe"/>
+                        <outlet property="btnLogin" destination="CJU-wn-bAO" id="XI9-aw-BPU"/>
                         <outlet property="btnLoginWithApple" destination="efo-Ke-cZq" id="yEV-My-ObD"/>
                         <outlet property="btnLoginWithGoogle" destination="MW0-OU-NPa" id="sia-OV-ejE"/>
-                        <outlet property="btnRegistration" destination="CJU-wn-bAO" id="WAt-kI-xmo"/>
+                        <outlet property="btnRegistration" destination="cwi-Sv-BrJ" id="cPt-Vu-kRl"/>
                         <outlet property="introductionCollection" destination="nVm-se-0gp" id="D0J-iJ-xYf"/>
                         <outlet property="pageControl" destination="jBO-Ry-vBh" id="fQv-Bf-qnT"/>
                     </connections>
@@ -113,142 +113,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-28" y="1"/>
-        </scene>
-        <!--Create Home View Controller-->
-        <scene sceneID="LLW-Id-jfR">
-            <objects>
-                <viewController storyboardIdentifier="CreateHomeViewController" id="IGI-xH-6JW" customClass="CreateHomeViewController" customModule="Innova" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ks2-4Z-2uB" customClass="IQPreviousNextView" customModule="IQKeyboardManagerSwift">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZfF-p1-kCk">
-                                <rect key="frame" x="0.0" y="59" width="393" height="592"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24L-wm-2O8">
-                                        <rect key="frame" x="30" y="0.0" width="333" height="36"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
-                                        <color key="textColor" name="TitleBlack"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="in_addHouse" translatesAutoresizingMaskIntoConstraints="NO" id="jtQ-LU-hKA">
-                                        <rect key="frame" x="106" y="75" width="181" height="150"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkW-L6-khu">
-                                        <rect key="frame" x="30" y="249" width="329.66666666666669" height="56"/>
-                                        <string key="text">Welcome to Innova! To start using the app,
-you need to create a home or be invited to an existing home</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <color key="textColor" name="DarkGray"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Yti-Af-Bdy">
-                                        <rect key="frame" x="30" y="329" width="333" height="50"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omz-Sr-tes" customClass="IQPreviousNextView" customModule="IQKeyboardManagerSwift">
-                                                <rect key="frame" x="0.0" y="0.0" width="333" height="50"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmi-lj-G0u">
-                                                        <rect key="frame" x="16" y="0.0" width="309" height="50"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hU-tO-M87">
-                                                                <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="50"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                                                <color key="textColor" name="TitleBlack"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Home name" textAlignment="natural" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4qN-s5-N2I">
-                                                                <rect key="frame" x="133.33333333333337" y="0.0" width="175.66666666666663" height="50"/>
-                                                                <color key="tintColor" red="0.0" green="0.51372549020000002" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="textColor" name="TitleBlack"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                            </textField>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                                <color key="backgroundColor" name="Gray5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="cmi-lj-G0u" secondAttribute="trailing" constant="8" id="3if-eA-4Qf"/>
-                                                    <constraint firstItem="cmi-lj-G0u" firstAttribute="top" secondItem="Omz-Sr-tes" secondAttribute="top" id="TWT-Pn-Iah"/>
-                                                    <constraint firstItem="2hU-tO-M87" firstAttribute="width" secondItem="Omz-Sr-tes" secondAttribute="width" multiplier="0.4" id="Yqj-Ms-QP3"/>
-                                                    <constraint firstAttribute="bottom" secondItem="cmi-lj-G0u" secondAttribute="bottom" id="s2R-fT-Acp"/>
-                                                    <constraint firstItem="cmi-lj-G0u" firstAttribute="leading" secondItem="Omz-Sr-tes" secondAttribute="leading" constant="16" id="t7t-PL-vbJ"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="Radius">
-                                                        <real key="value" value="12"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="nkW-L6-khu" firstAttribute="top" secondItem="jtQ-LU-hKA" secondAttribute="bottom" constant="24" id="1CW-3f-2bs"/>
-                                    <constraint firstItem="24L-wm-2O8" firstAttribute="centerX" secondItem="ZfF-p1-kCk" secondAttribute="centerX" id="40Y-Ua-8us"/>
-                                    <constraint firstItem="24L-wm-2O8" firstAttribute="top" secondItem="ZfF-p1-kCk" secondAttribute="top" id="7Ga-ze-5Cc"/>
-                                    <constraint firstAttribute="bottom" secondItem="Yti-Af-Bdy" secondAttribute="bottom" id="ER7-9P-NMG"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="24L-wm-2O8" secondAttribute="trailing" id="R34-Fd-dUt"/>
-                                    <constraint firstAttribute="trailing" secondItem="jtQ-LU-hKA" secondAttribute="trailing" constant="106" id="VJA-vD-JnL"/>
-                                    <constraint firstItem="24L-wm-2O8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZfF-p1-kCk" secondAttribute="leading" id="chu-gp-Ltp"/>
-                                    <constraint firstItem="jtQ-LU-hKA" firstAttribute="top" secondItem="24L-wm-2O8" secondAttribute="bottom" constant="39" id="d4g-v3-5kd"/>
-                                    <constraint firstItem="Yti-Af-Bdy" firstAttribute="top" secondItem="nkW-L6-khu" secondAttribute="bottom" constant="24" id="gZE-YY-hfj"/>
-                                    <constraint firstItem="Yti-Af-Bdy" firstAttribute="leading" secondItem="ZfF-p1-kCk" secondAttribute="leading" constant="30" id="hpf-dY-Veo"/>
-                                    <constraint firstItem="jtQ-LU-hKA" firstAttribute="leading" secondItem="ZfF-p1-kCk" secondAttribute="leading" constant="106" id="iQB-jR-XM0"/>
-                                    <constraint firstAttribute="trailing" secondItem="Yti-Af-Bdy" secondAttribute="trailing" constant="30" id="uT7-WX-QxE"/>
-                                    <constraint firstItem="nkW-L6-khu" firstAttribute="leading" secondItem="ZfF-p1-kCk" secondAttribute="leading" constant="30" id="utd-Dn-CZZ"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nkW-L6-khu" secondAttribute="trailing" constant="20" symbolic="YES" id="w4u-cU-XBf"/>
-                                </constraints>
-                            </scrollView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ekz-Vp-iZ9">
-                                <rect key="frame" x="30" y="651" width="333" height="116"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F31-9K-A2v" customClass="GreenThemeButton" customModule="Innova" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="333" height="50"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Save home"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ey1-BG-R7r" customClass="GreenBorderWithArrow" customModule="Innova" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="66" width="333" height="50"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                        <state key="normal" title="Get invited"/>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Ey1-BG-R7r" firstAttribute="height" secondItem="F31-9K-A2v" secondAttribute="height" id="mqb-T0-GMg"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Dnh-uS-jYs"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="ekz-Vp-iZ9" firstAttribute="top" secondItem="ZfF-p1-kCk" secondAttribute="bottom" id="0K7-6n-mVc"/>
-                            <constraint firstItem="24L-wm-2O8" firstAttribute="width" secondItem="Ks2-4Z-2uB" secondAttribute="width" multiplier="0.847328" id="7IS-Lj-Pjs"/>
-                            <constraint firstItem="ZfF-p1-kCk" firstAttribute="trailing" secondItem="Dnh-uS-jYs" secondAttribute="trailing" id="GMr-UU-XuV"/>
-                            <constraint firstItem="F31-9K-A2v" firstAttribute="height" secondItem="Ks2-4Z-2uB" secondAttribute="height" multiplier="0.0586854" id="He6-ME-rws"/>
-                            <constraint firstItem="ekz-Vp-iZ9" firstAttribute="leading" secondItem="Dnh-uS-jYs" secondAttribute="leading" constant="30" id="HsT-Tp-PNA"/>
-                            <constraint firstItem="24L-wm-2O8" firstAttribute="height" secondItem="Ks2-4Z-2uB" secondAttribute="height" multiplier="0.0422535" id="Q1w-UC-rnU"/>
-                            <constraint firstItem="ekz-Vp-iZ9" firstAttribute="trailing" secondItem="Dnh-uS-jYs" secondAttribute="trailing" constant="-30" id="Rr8-U9-1qA"/>
-                            <constraint firstItem="ZfF-p1-kCk" firstAttribute="leading" secondItem="Dnh-uS-jYs" secondAttribute="leading" id="axV-Tw-HJc"/>
-                            <constraint firstItem="jtQ-LU-hKA" firstAttribute="height" secondItem="Ks2-4Z-2uB" secondAttribute="height" multiplier="0.176056" id="bYI-dX-ccE"/>
-                            <constraint firstItem="Dnh-uS-jYs" firstAttribute="bottom" secondItem="ekz-Vp-iZ9" secondAttribute="bottom" constant="51" id="dgD-eM-JmE"/>
-                            <constraint firstItem="Omz-Sr-tes" firstAttribute="height" secondItem="Ks2-4Z-2uB" secondAttribute="height" multiplier="0.0586854" id="hH1-KB-icX"/>
-                            <constraint firstItem="jtQ-LU-hKA" firstAttribute="width" secondItem="Ks2-4Z-2uB" secondAttribute="width" multiplier="0.46056" id="jmc-oP-JcP"/>
-                            <constraint firstItem="ZfF-p1-kCk" firstAttribute="top" secondItem="Dnh-uS-jYs" secondAttribute="top" id="shn-Bf-bdj"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="btnCreateHomeViaQR" destination="Ey1-BG-R7r" id="O5F-vA-Agg"/>
-                        <outlet property="btnSaveHome" destination="F31-9K-A2v" id="Hvx-s7-NVv"/>
-                        <outlet property="txtName" destination="4qN-s5-N2I" id="LlL-bb-XHH"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w5A-sC-9IH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3277" y="12"/>
         </scene>
         <!--Custom Splash Screen-->
         <scene sceneID="Djh-Oi-mER">
@@ -289,19 +153,172 @@ you need to create a home or be invited to an existing home</string>
             </objects>
             <point key="canvasLocation" x="-702" y="-3"/>
         </scene>
+        <!--Create Home View Controller-->
+        <scene sceneID="lY7-KQ-yFU">
+            <objects>
+                <viewController storyboardIdentifier="CreateHomeViewController" id="kMR-ds-gvu" customClass="CreateHomeViewController" customModule="Innova" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iTS-Ki-iFh" customClass="IQPreviousNextView" customModule="IQKeyboardManagerSwift">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YS-1T-W6I">
+                                <rect key="frame" x="0.0" y="59" width="393" height="592"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Zy-Od-qYS">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="419"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0F-Tk-v04">
+                                                <rect key="frame" x="30" y="0.0" width="333" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="G5T-it-1k0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <color key="textColor" name="TitleBlack"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="in_addHouse" translatesAutoresizingMaskIntoConstraints="NO" id="Ofz-Y9-t1O">
+                                                <rect key="frame" x="106" y="75" width="181" height="150"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opK-CN-kQc">
+                                                <rect key="frame" x="30" y="249" width="333" height="56"/>
+                                                <string key="text">Welcome to Innova! To start using the app,
+you need to create a home or be invited to an existing home</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" name="DarkGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wXm-gI-fJS">
+                                                <rect key="frame" x="30" y="349" width="333" height="50"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZW9-Uw-jZO" customClass="IQPreviousNextView" customModule="IQKeyboardManagerSwift">
+                                                        <rect key="frame" x="0.0" y="0.0" width="333" height="50"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZp-gc-Fr9">
+                                                                <rect key="frame" x="16" y="0.0" width="309" height="50"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vz-VU-72u">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="50"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                                        <color key="textColor" name="TitleBlack"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Home name" textAlignment="natural" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="H3S-pJ-amJ">
+                                                                        <rect key="frame" x="133.33333333333337" y="0.0" width="175.66666666666663" height="50"/>
+                                                                        <color key="tintColor" red="0.0" green="0.51372549020000002" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" name="TitleBlack"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="Gray5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="pZp-gc-Fr9" secondAttribute="trailing" constant="8" id="1eB-DR-OjF"/>
+                                                            <constraint firstItem="pZp-gc-Fr9" firstAttribute="leading" secondItem="ZW9-Uw-jZO" secondAttribute="leading" constant="16" id="KKe-kS-H47"/>
+                                                            <constraint firstAttribute="bottom" secondItem="pZp-gc-Fr9" secondAttribute="bottom" id="PL0-6i-RCv"/>
+                                                            <constraint firstItem="pZp-gc-Fr9" firstAttribute="top" secondItem="ZW9-Uw-jZO" secondAttribute="top" id="Y2A-co-8pP"/>
+                                                            <constraint firstItem="4Vz-VU-72u" firstAttribute="width" secondItem="ZW9-Uw-jZO" secondAttribute="width" multiplier="0.4" id="tex-Sh-eH5"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="Radius">
+                                                                <real key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="8ja-Jc-gwk"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="wXm-gI-fJS" secondAttribute="bottom" constant="20" id="0Lb-Z1-FP1"/>
+                                            <constraint firstItem="Ofz-Y9-t1O" firstAttribute="top" secondItem="T0F-Tk-v04" secondAttribute="bottom" constant="39" id="3Nm-2B-psJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="opK-CN-kQc" secondAttribute="trailing" constant="30" id="48g-Gd-fcv"/>
+                                            <constraint firstItem="Ofz-Y9-t1O" firstAttribute="leading" secondItem="5Zy-Od-qYS" secondAttribute="leading" constant="106" id="72s-R2-oc7"/>
+                                            <constraint firstAttribute="trailing" secondItem="wXm-gI-fJS" secondAttribute="trailing" constant="30" id="FBs-LL-M0E"/>
+                                            <constraint firstItem="opK-CN-kQc" firstAttribute="top" secondItem="Ofz-Y9-t1O" secondAttribute="bottom" constant="24" id="GYY-qc-qA4"/>
+                                            <constraint firstItem="T0F-Tk-v04" firstAttribute="leading" secondItem="5Zy-Od-qYS" secondAttribute="leading" constant="30" id="OTX-L5-3SA"/>
+                                            <constraint firstItem="opK-CN-kQc" firstAttribute="leading" secondItem="5Zy-Od-qYS" secondAttribute="leading" constant="30" id="TYK-El-6wg"/>
+                                            <constraint firstItem="wXm-gI-fJS" firstAttribute="leading" secondItem="5Zy-Od-qYS" secondAttribute="leading" constant="30" id="cab-pJ-aSF"/>
+                                            <constraint firstItem="wXm-gI-fJS" firstAttribute="top" secondItem="opK-CN-kQc" secondAttribute="bottom" constant="44" id="cqN-uV-iu9"/>
+                                            <constraint firstAttribute="trailing" secondItem="T0F-Tk-v04" secondAttribute="trailing" constant="30" id="hsU-ot-0J9"/>
+                                            <constraint firstItem="T0F-Tk-v04" firstAttribute="top" secondItem="5Zy-Od-qYS" secondAttribute="top" id="jSu-hp-BVb"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ofz-Y9-t1O" secondAttribute="trailing" constant="106" id="uGG-es-4l3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="5Zy-Od-qYS" firstAttribute="leading" secondItem="8YS-1T-W6I" secondAttribute="leading" id="9y6-pE-wYN"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Zy-Od-qYS" secondAttribute="bottom" constant="10" id="LNS-9r-DJe"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Zy-Od-qYS" secondAttribute="trailing" id="jpm-Eh-TsL"/>
+                                    <constraint firstItem="5Zy-Od-qYS" firstAttribute="top" secondItem="8YS-1T-W6I" secondAttribute="top" id="uOp-M5-EhV"/>
+                                </constraints>
+                            </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yV9-Iz-fbf">
+                                <rect key="frame" x="30" y="651" width="333" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ch4-Fs-Pbh" customClass="GreenThemeButton" customModule="Innova" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="50"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Save home"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voq-YQ-yHZ" customClass="GreenBorderWithArrow" customModule="Innova" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="66" width="333" height="50"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        <state key="normal" title="Get invited"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Voq-YQ-yHZ" firstAttribute="height" secondItem="ch4-Fs-Pbh" secondAttribute="height" id="q3n-Lw-Fq2"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ndx-wD-SQd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ofz-Y9-t1O" firstAttribute="height" secondItem="iTS-Ki-iFh" secondAttribute="height" multiplier="0.176056" id="7hT-gS-Qcv"/>
+                            <constraint firstItem="8YS-1T-W6I" firstAttribute="top" secondItem="Ndx-wD-SQd" secondAttribute="top" id="9WO-Ej-74e"/>
+                            <constraint firstItem="Ofz-Y9-t1O" firstAttribute="width" secondItem="iTS-Ki-iFh" secondAttribute="width" multiplier="0.46056" id="OAt-Kp-TZb"/>
+                            <constraint firstItem="yV9-Iz-fbf" firstAttribute="leading" secondItem="Ndx-wD-SQd" secondAttribute="leading" constant="30" id="PUa-g6-UxE"/>
+                            <constraint firstItem="8YS-1T-W6I" firstAttribute="centerX" secondItem="Ndx-wD-SQd" secondAttribute="centerX" id="PpU-eW-M4o"/>
+                            <constraint firstItem="8YS-1T-W6I" firstAttribute="trailing" secondItem="Ndx-wD-SQd" secondAttribute="trailing" id="QTR-Ef-MFh"/>
+                            <constraint firstItem="Ndx-wD-SQd" firstAttribute="bottom" secondItem="yV9-Iz-fbf" secondAttribute="bottom" constant="51" id="Yb0-q3-3tK"/>
+                            <constraint firstItem="5Zy-Od-qYS" firstAttribute="width" secondItem="iTS-Ki-iFh" secondAttribute="width" id="gaq-Wy-j1S"/>
+                            <constraint firstItem="ch4-Fs-Pbh" firstAttribute="height" secondItem="iTS-Ki-iFh" secondAttribute="height" multiplier="0.0586854" id="jZM-Pv-ulM"/>
+                            <constraint firstItem="yV9-Iz-fbf" firstAttribute="top" secondItem="8YS-1T-W6I" secondAttribute="bottom" id="rKu-ob-cAg"/>
+                            <constraint firstItem="8YS-1T-W6I" firstAttribute="leading" secondItem="Ndx-wD-SQd" secondAttribute="leading" id="tzX-ub-CIl"/>
+                            <constraint firstItem="8YS-1T-W6I" firstAttribute="width" secondItem="iTS-Ki-iFh" secondAttribute="width" id="ulF-xa-kZN"/>
+                            <constraint firstItem="yV9-Iz-fbf" firstAttribute="trailing" secondItem="Ndx-wD-SQd" secondAttribute="trailing" constant="-30" id="vlK-9p-btT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCreateHomeViaQR" destination="Voq-YQ-yHZ" id="76g-d6-u17"/>
+                        <outlet property="btnSaveHome" destination="ch4-Fs-Pbh" id="tRq-f6-nr5"/>
+                        <outlet property="txtName" destination="H3S-pJ-amJ" id="DPn-Wd-ufj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMc-A3-rJG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3311" y="-15"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="CJU-wn-bAO">
             <size key="intrinsicContentSize" width="43" height="32"/>
         </designable>
-        <designable name="Ey1-BG-R7r">
-            <size key="intrinsicContentSize" width="83" height="32"/>
-        </designable>
-        <designable name="F31-9K-A2v">
-            <size key="intrinsicContentSize" width="85" height="32"/>
-        </designable>
         <designable name="MW0-OU-NPa">
             <size key="intrinsicContentSize" width="194" height="28"/>
+        </designable>
+        <designable name="Voq-YQ-yHZ">
+            <size key="intrinsicContentSize" width="83" height="32"/>
+        </designable>
+        <designable name="ch4-Fs-Pbh">
+            <size key="intrinsicContentSize" width="85" height="32"/>
         </designable>
         <designable name="cwi-Sv-BrJ">
             <size key="intrinsicContentSize" width="60" height="32"/>

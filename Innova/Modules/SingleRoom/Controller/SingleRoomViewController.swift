@@ -144,8 +144,14 @@ extension SingleRoomViewController: UITableViewDelegate, UITableViewDataSource, 
         }
         
         let item = temperatureData.sectionData[indexPath.row]
-        cell.lblTemprature.text = item.isSwitchOn ? item.temperature : "--°"
-        cell.lblRoomName.text = item.roomName
+        
+        
+        let attributedString = item.temperature.attributedString()
+
+        cell.lblTemprature.attributedText = item.isSwitchOn ? attributedString : attributedString
+
+        cell.lblRoomName.text = item.roomName + " - \(item.temperature)°"
+
         cell.lblDeviceName.text = item.deviceName
         
         if item.isSwitchOn {
@@ -154,7 +160,9 @@ extension SingleRoomViewController: UITableViewDelegate, UITableViewDataSource, 
             cell.lblTemprature.textColor = appConfig.appColors.themeColor
             cell.lblRoomName.textColor = appConfig.appColors.themeColor
             cell.lblDeviceName.textColor = appConfig.appColors.themeColor
-
+            cell.btnArrow.setImage(UIImage(named: "in_arrowRight"), for: .normal)
+            cell.btnTrash.setImage(UIImage(named: "in_trash"), for: .normal)
+            cell.imgHamburger.image = UIImage(named: "in_themeHamburger")
             if item.isConnected {
                 cell.btnWifi.isHidden = true
                 cell.shieldView.image = item.isPaused ? UIImage(named: "in_themePause") : UIImage(named: "in_exclamationMark")
@@ -164,11 +172,15 @@ extension SingleRoomViewController: UITableViewDelegate, UITableViewDataSource, 
                 cell.shieldView.image = item.isPaused ? UIImage(named: "in_themePause") : UIImage(named: "in_exclamationMark")
             }
         } else {
+            
             cell.gradientImage.image = UIImage(named: "in_tblGradientGray")
             cell.temperatureSwitch.isHidden = false
             cell.lblTemprature.textColor = appConfig.appColors.btnInActiveTextColor
             cell.lblRoomName.textColor = appConfig.appColors.btnInActiveTextColor
             cell.lblDeviceName.textColor = appConfig.appColors.btnInActiveTextColor
+            cell.btnArrow.setImage(UIImage(named:"in_arrowGrayRight" ), for: .normal)
+            cell.btnTrash.setImage(UIImage(named:"in_grayTrash"), for: .normal)
+            cell.imgHamburger.image = UIImage(named: "in_grayHamburger")
             cell.btnWifi.isHidden = true
             cell.btnWifi.setImage(UIImage(named: "in_wifiSlash"), for: .normal)
             cell.shieldView.image = item.isPaused ? UIImage(named: "in_grayPause") : UIImage(named: "in_exclamationMark")

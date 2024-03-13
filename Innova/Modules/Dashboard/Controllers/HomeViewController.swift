@@ -7,7 +7,7 @@ struct Services {
 }
 
 struct ServiceObject {
-    var temperature: String
+    var temperature: Double
     var deviceName: String
     var roomName: String
     var isSwitchOn: Bool
@@ -41,36 +41,36 @@ class HomeViewController: UIViewController, UIViewControllerTransitioningDelegat
     }()
     let temperatureData: [Services] = [
         Services(sectionName: "Living room".localize(), sectionData: [
-            ServiceObject(temperature: "22°C", deviceName: "Termostato Smart", roomName: "Living room".localize(), isSwitchOn: true, isConnected: false, isPaused: false),
-            ServiceObject(temperature: "23°C", deviceName: "Lampadina Smart", roomName: "Living room".localize(), isSwitchOn: true, isConnected: false, isPaused: false),
-            ServiceObject(temperature: "21°C", deviceName: "Altoparlante Smart", roomName: "Living room".localize(), isSwitchOn: true, isConnected: true, isPaused: true),
-            ServiceObject(temperature: "24°C", deviceName: "TV Smart", roomName: "Living room".localize(), isSwitchOn: true, isConnected: false, isPaused: false),
-            ServiceObject(temperature: "25°C", deviceName: "Condizionatore d'aria", roomName: "Living room".localize(), isSwitchOn: true, isConnected: false, isPaused: false),
-            ServiceObject(temperature: "20°C", deviceName: "Macchina del caffè", roomName: "Living room".localize(), isSwitchOn: false, isConnected: false, isPaused: true)
+            ServiceObject(temperature: 22.0, deviceName: "Device".localize(), roomName: "Living room".localize(), isSwitchOn: true, isConnected: false, isPaused: false),
+            ServiceObject(temperature: 23, deviceName: "Device".localize(), roomName: "Living room".localize(), isSwitchOn: true, isConnected: false, isPaused: false),
+            ServiceObject(temperature: 21.0, deviceName: "Device".localize(), roomName: "Living room".localize(), isSwitchOn: true, isConnected: true, isPaused: true),
+            ServiceObject(temperature: 24, deviceName: "Device".localize(), roomName: "Living room".localize(), isSwitchOn: true, isConnected: false, isPaused: false),
+            ServiceObject(temperature: 25.5, deviceName: "Device".localize(), roomName: "Living room".localize(), isSwitchOn: true, isConnected: false, isPaused: false),
+            ServiceObject(temperature: 20, deviceName: "Device".localize(), roomName: "Living room".localize(), isSwitchOn: false, isConnected: false, isPaused: true)
         ]),
         Services(sectionName: "Lobby".localize(), sectionData: [
-            ServiceObject(temperature: "24°C", deviceName: "Termostato Smart", roomName: "Lobby".localize(), isSwitchOn: true, isConnected: false, isPaused: false),
-            ServiceObject(temperature: "25°C", deviceName: "Specchio Smart", roomName: "Lobby".localize(), isSwitchOn: true, isConnected: true, isPaused: true),
-            ServiceObject(temperature: "23°C", deviceName: "Scaldasalviette", roomName: "Lobby".localize(), isSwitchOn: true, isConnected: false, isPaused: false),
-            ServiceObject(temperature: "26°C", deviceName: "Radio per la doccia", roomName: "Lobby".localize(), isSwitchOn: false, isConnected: true, isPaused: false),
-            ServiceObject(temperature: "22°C", deviceName: "Spazzolino elettrico", roomName: "Lobby".localize(), isSwitchOn: true, isConnected: true, isPaused: true),
-            ServiceObject(temperature: "21°C", deviceName: "Asciugacapelli", roomName: "Lobby".localize(), isSwitchOn: false, isConnected: false, isPaused: false)
+            ServiceObject(temperature: 24.0, deviceName: "Device".localize(), roomName: "Lobby".localize(), isSwitchOn: true, isConnected: false, isPaused: false),
+            ServiceObject(temperature: 25.1, deviceName: "Device".localize(), roomName: "Lobby".localize(), isSwitchOn: true, isConnected: true, isPaused: true),
+            ServiceObject(temperature: 23.1, deviceName: "Device".localize(), roomName: "Lobby".localize(), isSwitchOn: true, isConnected: false, isPaused: false),
+            ServiceObject(temperature: 26.5, deviceName: "Device".localize(), roomName: "Lobby".localize(), isSwitchOn: false, isConnected: true, isPaused: false),
+            ServiceObject(temperature: 22.0, deviceName: "Device".localize(), roomName: "Lobby".localize(), isSwitchOn: true, isConnected: true, isPaused: true),
+            ServiceObject(temperature: 21.5, deviceName: "Device".localize(), roomName: "Lobby".localize(), isSwitchOn: false, isConnected: false, isPaused: false)
         ]),
         Services(sectionName: "Kitchen".localize(), sectionData: [
-            ServiceObject(temperature: "25°C", deviceName: "Termostato Smart", roomName: "Kitchen".localize(), isSwitchOn: true, isConnected: false, isPaused: false),
-            ServiceObject(temperature: "24°C", deviceName: "Lampadina Smart", roomName: "Kitchen".localize(), isSwitchOn: true, isConnected: true, isPaused: false),
-            ServiceObject(temperature: "26°C", deviceName: "Altoparlante Smart", roomName: "Kitchen".localize(), isSwitchOn: true, isConnected: false, isPaused: true),
-            ServiceObject(temperature: "23°C", deviceName: "TV Smart", roomName: "Kitchen".localize(), isSwitchOn: false, isConnected: false, isPaused: false),
-            ServiceObject(temperature: "22°C", deviceName: "Forno", roomName: "Kitchen".localize(), isSwitchOn: false, isConnected: true, isPaused: false),
-            ServiceObject(temperature: "27°C", deviceName: "Frigorifero", roomName: "Kitchen".localize(), isSwitchOn: true, isConnected: false, isPaused: true)
+            ServiceObject(temperature: 25.6, deviceName: "Device".localize(), roomName: "Kitchen".localize(), isSwitchOn: true, isConnected: false, isPaused: false),
+            ServiceObject(temperature: 24.0, deviceName: "Device".localize(), roomName: "Kitchen".localize(), isSwitchOn: true, isConnected: true, isPaused: false),
+            ServiceObject(temperature: 26.0, deviceName: "Device".localize(), roomName: "Kitchen".localize(), isSwitchOn: true, isConnected: false, isPaused: true),
+            ServiceObject(temperature: 23.6, deviceName: "Device".localize(), roomName: "Kitchen".localize(), isSwitchOn: false, isConnected: false, isPaused: false),
+            ServiceObject(temperature: 22.0, deviceName: "Device".localize(), roomName: "Kitchen".localize(), isSwitchOn: false, isConnected: true, isPaused: false),
+            ServiceObject(temperature: 27.0, deviceName: "Device".localize(), roomName: "Kitchen".localize(), isSwitchOn: true, isConnected: false, isPaused: true)
         ]),
         Services(sectionName: "Bath".localize(), sectionData: [
-            ServiceObject(temperature: "28°C", deviceName: "Sprinkler Smart", roomName: "Bath".localize(), isSwitchOn: true, isConnected: true, isPaused: false),
-            ServiceObject(temperature: "27°C", deviceName: "Telecamera di sicurezza", roomName: "Bath".localize(), isSwitchOn: true, isConnected: false, isPaused: true),
-            ServiceObject(temperature: "29°C", deviceName: "Luci esterne", roomName: "Bath".localize(), isSwitchOn: true, isConnected: true, isPaused: false),
-            ServiceObject(temperature: "26°C", deviceName: "Scaldapatio", roomName: "Bath".localize(), isSwitchOn: true, isConnected: true, isPaused: false),
-            ServiceObject(temperature: "30°C", deviceName: "Pompa per la piscina", roomName: "Bath".localize(), isSwitchOn: false, isConnected: false, isPaused: false),
-            ServiceObject(temperature: "29°C", deviceName: "Tapparella Smart", roomName: "Bath".localize(), isSwitchOn: false, isConnected: true, isPaused: true)
+            ServiceObject(temperature: 28.7, deviceName: "Device".localize(), roomName: "Bath".localize(), isSwitchOn: true, isConnected: true, isPaused: false),
+            ServiceObject(temperature: 27.7, deviceName: "Device".localize(), roomName: "Bath".localize(), isSwitchOn: true, isConnected: false, isPaused: true),
+            ServiceObject(temperature: 29.8, deviceName: "Device".localize(), roomName: "Bath".localize(), isSwitchOn: true, isConnected: true, isPaused: false),
+            ServiceObject(temperature: 26.8, deviceName: "Device".localize(), roomName: "Bath".localize(), isSwitchOn: true, isConnected: true, isPaused: false),
+            ServiceObject(temperature: 30.0, deviceName: "Device".localize(), roomName: "Bath".localize(), isSwitchOn: false, isConnected: false, isPaused: false),
+            ServiceObject(temperature: 29.0, deviceName: "Device".localize(), roomName: "Bath".localize(), isSwitchOn: false, isConnected: true, isPaused: true)
         ])
     ]
     
@@ -256,8 +256,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashboardTempCell", for: indexPath) as! DashboardTempCell
-            cell.lblTemp.text = temperatureData[indexPath.section].sectionData[indexPath.row].isSwitchOn ? temperatureData[indexPath.section].sectionData[indexPath.row].temperature : "--°"
-            cell.lblRoomName.text = temperatureData[indexPath.section].sectionData[indexPath.row].roomName
+            
+
+            let attributedString = temperatureData[indexPath.section].sectionData[indexPath.row].temperature.attributedString()
+
+            cell.lblTemp.attributedText = temperatureData[indexPath.section].sectionData[indexPath.row].isSwitchOn ? attributedString : attributedString
+            cell.lblRoomName.text = temperatureData[indexPath.section].sectionData[indexPath.row].roomName + " - \(temperatureData[indexPath.section].sectionData[indexPath.row].temperature)°"
             cell.lblDeviceName.text = temperatureData[indexPath.section].sectionData[indexPath.row].deviceName
             
             let isSwitchOn = temperatureData[indexPath.section].sectionData[indexPath.row].isSwitchOn
@@ -305,7 +309,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == servicesCollection {
-            let size = (data[indexPath.row].text as NSString).size(withAttributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16.0)])
+            let size = (data[indexPath.row].text as NSString).size(withAttributes: [NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 16) as Any])
             return CGSize(width: size.width + 52.0, height: 76)
         } else {
             let width = collectionView.bounds.width
@@ -321,5 +325,37 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let initiliazeVC : DeviceDetailsViewController = Utilities.viewController(name: "DeviceDetailsViewController", onStoryboard: "DeviceDetails") as! DeviceDetailsViewController
         initiliazeVC.hidesBottomBarWhenPushed = true
         navigationController!.pushViewController(initiliazeVC, animated: true)
+    }
+}
+extension Double {
+    func attributedString() -> NSAttributedString {
+        
+        let beforeDecimalFont = UIFont(name: "HelveticaNeue-Bold", size: 30)!
+        let afterDecimalFont = UIFont(name: "HelveticaNeue-Bold", size: 16)!
+        
+        let numberString = "\(self)°"
+        let attributedString = NSMutableAttributedString(string: numberString)
+        
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: beforeDecimalFont
+        ]
+        attributedString.addAttributes(attributes, range: NSRange(location: 0, length: numberString.count))
+        
+        if let decimalRange = numberString.range(of: ".") {
+            let decimalLocation = numberString.distance(from: numberString.startIndex, to: decimalRange.lowerBound)
+            
+            let beforeDecimalAttributes: [NSAttributedString.Key: Any] = [
+                .font: beforeDecimalFont
+            ]
+            attributedString.addAttributes(beforeDecimalAttributes, range: NSRange(location: 0, length: decimalLocation))
+            
+            let afterDecimalAttributes: [NSAttributedString.Key: Any] = [
+                .font: afterDecimalFont
+            ]
+            let afterDecimalLength = numberString.count - decimalLocation - 1
+            attributedString.addAttributes(afterDecimalAttributes, range: NSRange(location: decimalLocation + 1, length: afterDecimalLength))
+        }
+        
+        return attributedString
     }
 }
