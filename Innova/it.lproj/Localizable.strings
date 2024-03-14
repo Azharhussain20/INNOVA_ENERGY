@@ -53,6 +53,6 @@
 "Since you are the owner of this house, deleting this residence will result in the loss of all related data. This action is irreversible. Continue?" = "Dato che sei il proprietario di questa casa, eliminando questa abitazione tutti i dati relativi ad essa verranno persi. Questa azione è irreversibile. Continuare?";
 "Leave house" = "Lascia casa";
 "Device" = "Dispositivo";
-
+"If you think that the temperature set by the device is not accurate, you can adjust it from here. The device now reads 22° C sets the temperature measured by another thermometer." = "Se ritieni che la temperatura impostata dal dispositivo non sia esatta puoi regolarla da qui. Ora il dispositivo rileva 22° C imposta la temperatura misurata da un altro termometro.";
 
 

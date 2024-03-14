@@ -42,7 +42,7 @@
 "Xgv-86-TMt.normalTitle" = "Annulla";
 
 /* Class = "UIButton"; normalTitle = "Off"; ObjectID = "Yat-Xz-tlr"; */
-"Yat-Xz-tlr.normalTitle" = "Spento";
+"Yat-Xz-tlr.normalTitle" = "Minimo";
 
 /* Class = "UILabel"; text = "22°"; ObjectID = "ZTC-4A-Ko1"; */
 "ZTC-4A-Ko1.text" = "22°";

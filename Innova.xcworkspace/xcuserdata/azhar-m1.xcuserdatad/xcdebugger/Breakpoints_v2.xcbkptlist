@@ -509,17 +509,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F99B2359-C9AE-408B-9408-F54B855D84BF"
+            uuid = "592115F7-1CAE-406A-AEEE-DFDD74971F5E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Innova/Modules/DeviceDetails/Controllers/DeviceDetailsViewController.swift"
+            filePath = "Innova/Modules/SSCircularRingSlider/SSCircularRingSlider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
-            landmarkName = "controlValueUpdated(value:)"
+            startingLineNumber = "299"
+            endingLineNumber = "299"
+            landmarkName = "setValueTextfield()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "592115F7-1CAE-406A-AEEE-DFDD74971F5E - cb5a939f003c182d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.SSCircularRingSlider.setValueTextfield() -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/M1%20BitBucket/INNOVA_ENERGY/Innova/Modules/SSCircularRingSlider/SSCircularRingSlider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "299"
+                  endingLineNumber = "299"
+                  offsetFromSymbolStart = "336">
+               </Location>
+               <Location
+                  uuid = "592115F7-1CAE-406A-AEEE-DFDD74971F5E - cb5a939f003c182d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Innova.SSCircularRingSlider.setValueTextfield() -&gt; ()"
+                  moduleName = "Innova"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azhar-m1/Desktop/M1%20BitBucket/INNOVA_ENERGY/Innova/Modules/SSCircularRingSlider/SSCircularRingSlider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "299"
+                  endingLineNumber = "299"
+                  offsetFromSymbolStart = "364">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

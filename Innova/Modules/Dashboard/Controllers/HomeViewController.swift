@@ -75,7 +75,7 @@ class HomeViewController: UIViewController, UIViewControllerTransitioningDelegat
     ]
     
     let data: [(imageName: String, text: String)] = [
-        ("in_dropDown1", "Location not detected".localize()),
+        ("in_clouds", "Location not detected".localize()),
         ("in_dropDown2", "Active Devices".localize()),
         ("in_dropDown3", "Add a device".localize()),
         ("in_dropDown4", "Room addition".localize()),
@@ -104,7 +104,7 @@ class HomeViewController: UIViewController, UIViewControllerTransitioningDelegat
         updateContentHeight()
         collectionTemp.visibleCells.forEach { cell in
             cell.transform = CGAffineTransform(scaleX: 0, y: 0)
-            UIView.animate(withDuration: 0.5, delay: 0.1, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.3, options: .curveEaseInOut, animations: {
+            UIView.animate(withDuration: 0.5, delay: 0.1, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.2, options: .transitionCrossDissolve, animations: {
                 cell.transform = .identity
             }, completion: nil)
         }
@@ -256,10 +256,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashboardTempCell", for: indexPath) as! DashboardTempCell
-            
 
-            let attributedString = temperatureData[indexPath.section].sectionData[indexPath.row].temperature.attributedString()
-
+            let attributedString = temperatureData[indexPath.section].sectionData[indexPath.row].temperature.attributedString(false)
             cell.lblTemp.attributedText = temperatureData[indexPath.section].sectionData[indexPath.row].isSwitchOn ? attributedString : attributedString
             cell.lblRoomName.text = temperatureData[indexPath.section].sectionData[indexPath.row].roomName + " - \(temperatureData[indexPath.section].sectionData[indexPath.row].temperature)°"
             cell.lblDeviceName.text = temperatureData[indexPath.section].sectionData[indexPath.row].deviceName
@@ -320,7 +318,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return CGSize(width: itemDimension, height: 105)
         }
     }
-    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        cell.alpha = 0.0
+        UIView.animate(withDuration: 0.5) {
+            cell.alpha = 1.0
+        }
+    }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let initiliazeVC : DeviceDetailsViewController = Utilities.viewController(name: "DeviceDetailsViewController", onStoryboard: "DeviceDetails") as! DeviceDetailsViewController
         initiliazeVC.hidesBottomBarWhenPushed = true
@@ -328,10 +331,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
 }
 extension Double {
-    func attributedString() -> NSAttributedString {
+    func attributedString(_ isFromDetail: Bool) -> NSAttributedString {
         
-        let beforeDecimalFont = UIFont(name: "HelveticaNeue-Bold", size: 30)!
-        let afterDecimalFont = UIFont(name: "HelveticaNeue-Bold", size: 16)!
+        let beforeDecimalFont = UIFont(name: isFromDetail ? "HelveticaNeue-Thin" : "HelveticaNeue-Bold" , size: isFromDetail ? 60 : 30)!
+        let afterDecimalFont = UIFont(name: isFromDetail ? "HelveticaNeue-Thin" :  "HelveticaNeue-Bold", size: isFromDetail ? 45 : 16)!
         
         let numberString = "\(self)°"
         let attributedString = NSMutableAttributedString(string: numberString)

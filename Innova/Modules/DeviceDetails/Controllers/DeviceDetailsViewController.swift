@@ -18,7 +18,7 @@ class DeviceDetailsViewController: BaseViewController, dateRangeSelectionViewCon
     @IBOutlet weak var fanModeView: UIStackView!
     @IBOutlet weak var btnChangeFanSpeed: UIButton!
     @IBOutlet weak var CollectionMode: UICollectionView!
-    @IBOutlet var circularRingSlider: SSCircularRingSlider!
+    @IBOutlet var circularRingSlider: PBCircularRingSlider!
     @IBOutlet weak var btnPowerSwitch: UIButton!
 
     //------------------------------------------
@@ -27,14 +27,14 @@ class DeviceDetailsViewController: BaseViewController, dateRangeSelectionViewCon
     var toDate = Date()
     var isInfoVisible : Bool = false
     var modeData: [Mode] = [
-        Mode(image: "in_autoMode", selectedImage:"in_autoModeSelected", steps: "Auto".localize(), isSelected: false),
+        Mode(image: "in_autoMode", selectedImage:"in_autoModeSelected", steps: "Auto".localize(), isSelected: true),
         Mode(image: "in_heatMode", selectedImage:"in_heatModeSelected", steps: "Heat".localize(), isSelected: false),
         Mode(image: "in_coolMode", selectedImage:"in_coolModeSelected", steps: "Cool".localize(), isSelected: false),
         Mode(image: "in_dryMode", selectedImage:"in_dryModeSelected", steps: "Dry".localize(), isSelected: false),
         Mode(image: "in_fanMode", selectedImage:"in_fanModeSelected", steps: "Fan".localize(), isSelected: false),
     ]
     
-    let arrValues: [Int] = [Int](0...30)
+    let arrValues = Array(stride(from: 0, through: 30, by: 0.1)).map { CGFloat($0.rounded(toPlaces: 1)) }
     let dropDown = DropDown()
     let flowLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
@@ -77,14 +77,13 @@ class DeviceDetailsViewController: BaseViewController, dateRangeSelectionViewCon
         dropDown.topOffset = CGPoint(x: 0, y: -(dropDown.anchorView?.plainView.bounds.height)! + 16)
         dropDown.cornerRadius = 12.0
         dropDown.dismissMode = .onTap
-//        dropDown.width = (dropDown.anchorView?.plainView.bounds.width)! + 20
         dropDown.direction = .bottom
         dropDown.dimmedBackgroundColor = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 0.5)
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             if item == "Off".localize() {
                 switchOff()
             } else {
-                switchOn(withOldTemperature: 22)
+                switchOn(withOldTemperature: 221)
             }
             btnChangeFanSpeed.setTitle(item, for: .normal)
         }
@@ -105,14 +104,15 @@ class DeviceDetailsViewController: BaseViewController, dateRangeSelectionViewCon
     func switchOff() {
         btnPowerSwitch.isSelected = false
         btnChangeFanSpeed.setTitleColor(appConfig.appColors.btnInActiveTextColor, for: .normal)
-        circularRingSlider.setValues(initialValue: arrValues[0].toCGFloat(), minValue: arrValues[0].toCGFloat(), maxValue: arrValues[arrValues.count - 1].toCGFloat())
+        circularRingSlider.setValues(initialValue: arrValues[0], minValue: arrValues[0], maxValue: arrValues[arrValues.count - 1])
     }
     
     func switchOn(withOldTemperature : Int) {
         btnPowerSwitch.isSelected = true
         btnChangeFanSpeed.setTitleColor(appConfig.appColors.themeColor, for: .normal)
-        circularRingSlider.setValues(initialValue: arrValues[withOldTemperature].toCGFloat(), minValue: arrValues[0].toCGFloat(), maxValue: arrValues[arrValues.count - 1].toCGFloat())
+        circularRingSlider.setValues(initialValue: arrValues[withOldTemperature], minValue: arrValues[0], maxValue: arrValues[arrValues.count - 1])
     }
+    
     func navigationSetup() {
         configurationTitleAndBack(title: "Device 1", imageName: "in_leftPrimary")
         backTapped = {
@@ -123,13 +123,18 @@ class DeviceDetailsViewController: BaseViewController, dateRangeSelectionViewCon
     
     func setCircularRingSliderColor() {
         circularRingSlider.delegate = self
-        let indexOfValue = 22
-        switchOn(withOldTemperature: 22)
-        circularRingSlider.setTextLabel(labelFont: UIFont.init(name: "HelveticaNeue-Light", size: 60.0)!, textColor: appConfig.appColors.titleBlack)
-        circularRingSlider.setValueTextFieldDelegate(viewController: self)
+        let indexOfValue = 221
+        switchOn(withOldTemperature: 221)
+        let vividColors: [CGColor] = [
+            appConfig.appColors.gradientOne.cgColor,
+            appConfig.appColors.gradientTwo.cgColor,
+            appConfig.appColors.gradientThree.cgColor,
+            UIColor.red.cgColor
+        ]
+
         circularRingSlider.setArrayValues(labelValues: arrValues, currentIndex: indexOfValue)
         circularRingSlider.setCircluarRingColor(innerCirlce: appConfig.appColors.circleTrack, outerCircle: UIColor.red)
-        circularRingSlider.setProgressLayerColor(colors: [appConfig.appColors.gradientOne.cgColor, appConfig.appColors.gradientTwo.cgColor])
+        circularRingSlider.setProgressLayerColor(colors:vividColors)
         circularRingSlider.setKnobOfSlider(knobSize: 40, knonbImage: UIImage(named: "iconKnobRed")!)
         circularRingSlider.setCircularRingWidth(innerRingWidth: 20, outerRingWidth: 20)
     }
@@ -159,19 +164,14 @@ class DeviceDetailsViewController: BaseViewController, dateRangeSelectionViewCon
 }
 //------------------------------------------
 //MARK: - Extensions -
-extension DeviceDetailsViewController: SSCircularRingSliderDelegate {
-    
-    func controlValueUpdated(value: Int) {
-        print("current control value\(value)")
+extension DeviceDetailsViewController: PBCircularRingSliderDelegate {
+    func controlValueUpdated(value: CGFloat) {
         if value <= 0 {
             btnChangeFanSpeed.setTitle("Off".localize(), for: .normal)
-
         } else {
-            btnChangeFanSpeed.setTitle((dropDown.selectedItem == nil) ? "Off".localize() : dropDown.selectedItem , for: .normal)
-
+            btnChangeFanSpeed.setTitle((dropDown.selectedItem == nil) ? "Min".localize() : dropDown.selectedItem , for: .normal)
         }
     }
-    
 }
 
 //------------------------------------------
@@ -194,8 +194,7 @@ extension DeviceDetailsViewController: UICollectionViewDelegate, UICollectionVie
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
-    {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.bounds.width
         let numberOfItemsPerRow: CGFloat = 5
         let spacing: CGFloat = flowLayout.minimumInteritemSpacing
@@ -219,7 +218,6 @@ extension DeviceDetailsViewController: UICollectionViewDelegate, UICollectionVie
         let sheet = initiliazeVC.sheetPresentationController
         sheet?.preferredCornerRadius = 16.0
         sheet?.prefersGrabberVisible = true
-        let multiplier = 0.40
         if #available(iOS 16.0, *) {
             let fraction = UISheetPresentationController.Detent.custom { context in
                 314.0
@@ -237,5 +235,15 @@ extension Date {
     func convertToTimeZone(timeZone: TimeZone) -> Date {
         let seconds = TimeInterval(timeZone.secondsFromGMT(for: self))
         return Date(timeInterval: seconds, since: self)
+    }
+}
+extension UIView {
+    func fadeTransition(_ duration:CFTimeInterval) {
+        let animation = CATransition()
+        animation.timingFunction = CAMediaTimingFunction(name:
+            CAMediaTimingFunctionName.easeInEaseOut)
+        animation.type = CATransitionType.fade
+        animation.duration = duration
+        layer.add(animation, forKey: CATransitionType.fade.rawValue)
     }
 }

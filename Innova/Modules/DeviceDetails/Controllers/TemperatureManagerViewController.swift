@@ -16,8 +16,9 @@ class TemperatureManagerViewController: UIViewController {
     //MARK: - Outlets -
     @IBOutlet private weak var minusBtn: UIButton!
     @IBOutlet private weak var plusBtn: UIButton!
-    @IBOutlet private weak var temperatureLbl: UILabel!
-    
+    @IBOutlet private weak var lblCautions: UILabel!
+    @IBOutlet private weak var lblTemperature: UILabel!
+
     
     //------------------------------------------
     //MARK: - Class Variables -
@@ -27,7 +28,7 @@ class TemperatureManagerViewController: UIViewController {
     private var timer: Timer?
     private var temperature: Float = 22.0 {
         didSet {
-            temperatureLbl.text = String(format: "%.1f° C", temperature)
+            lblTemperature.text = String(format: "%.1f° C", temperature)
         }
     }
     weak var delegate: TrueTemperatureViewControllerDelegate?
@@ -37,6 +38,7 @@ class TemperatureManagerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         didAddGestures()
+        configureAttributeText()
     }
     
     //------------------------------------------
@@ -51,6 +53,15 @@ class TemperatureManagerViewController: UIViewController {
         let plusBtnLongPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(plusBtnLongPressure(_:)))
         plusBtnLongPressGesture.minimumPressDuration = gestureDelay
         plusBtn.addGestureRecognizer(plusBtnLongPressGesture)
+    }
+    
+    func configureAttributeText() {
+        let main_string = "If you think that the temperature set by the device is not accurate, you can adjust it from here. The device now reads 22° C sets the temperature measured by another thermometer.".localize()
+        let string_to_color = "22° C"
+        let range = (main_string as NSString).range(of: string_to_color)
+        let attributedString = NSMutableAttributedString(string:main_string)
+        attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor(red: 0.0/255.0, green: 131.0/255.0, blue: 117.0/255.0, alpha: 1.0) , range: range)
+        lblCautions.attributedText = attributedString
     }
     
     func startTimer(increasing: Bool) {

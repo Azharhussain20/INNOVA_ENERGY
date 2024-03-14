@@ -63,12 +63,10 @@ extension UIView {
     
     func getGradientLayerOf(frame: CGRect, colors: [CGColor]) -> CAGradientLayer {
         let gradientLayer = CAGradientLayer()
-        gradientLayer.type = CAGradientLayerType.axial
-        gradientLayer.frame = frame
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.5)
+        gradientLayer.type = .conic
         gradientLayer.colors = colors
-        gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0) // Center of the view
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)   // Bottom-right corner of the view
+        gradientLayer.frame = frame
         return gradientLayer
     }
     

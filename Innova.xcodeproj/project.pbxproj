@@ -54,7 +54,7 @@
 		CB33F6162B6CBCBF0091CDC9 /* OperationModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB33F6142B6CBCBF0091CDC9 /* OperationModeCell.swift */; };
 		CB3A39FB2B7DE8B8003720E6 /* DeviceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A39FA2B7DE8B8003720E6 /* DeviceDetailsViewController.swift */; };
 		CB3A3A012B7E1A78003720E6 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A39FD2B7E1A78003720E6 /* Extentions.swift */; };
-		CB3A3A022B7E1A79003720E6 /* SSCircularRingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A39FE2B7E1A78003720E6 /* SSCircularRingSlider.swift */; };
+		CB3A3A022B7E1A79003720E6 /* PBCircularRingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A39FE2B7E1A78003720E6 /* PBCircularRingSlider.swift */; };
 		CB3F84E12B7C9D4400BA164D /* TemperatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3F84DF2B7C9D4400BA164D /* TemperatureCell.swift */; };
 		CB49F2582B6B68C600FBE709 /* HeaderSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB49F2562B6B68C600FBE709 /* HeaderSupplementaryView.swift */; };
 		CB49F2622B6B88F400FBE709 /* HomeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB49F2612B6B88F400FBE709 /* HomeSettings.swift */; };
@@ -141,7 +141,7 @@
 		CB33F6142B6CBCBF0091CDC9 /* OperationModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationModeCell.swift; sourceTree = "<group>"; };
 		CB3A39FA2B7DE8B8003720E6 /* DeviceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsViewController.swift; sourceTree = "<group>"; };
 		CB3A39FD2B7E1A78003720E6 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
-		CB3A39FE2B7E1A78003720E6 /* SSCircularRingSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCircularRingSlider.swift; sourceTree = "<group>"; };
+		CB3A39FE2B7E1A78003720E6 /* PBCircularRingSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBCircularRingSlider.swift; sourceTree = "<group>"; };
 		CB3F84DF2B7C9D4400BA164D /* TemperatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureCell.swift; sourceTree = "<group>"; };
 		CB49F2562B6B68C600FBE709 /* HeaderSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSupplementaryView.swift; sourceTree = "<group>"; };
 		CB49F2612B6B88F400FBE709 /* HomeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSettings.swift; sourceTree = "<group>"; };
@@ -405,7 +405,7 @@
 				CB49F25A2B6B88B000FBE709 /* HomeSettings */,
 				CB303C8A2B611B3000B9A770 /* Rooms */,
 				CBA3FA5D2B7B883D00C9DA61 /* SingleRoom */,
-				CB3A39FC2B7E1A78003720E6 /* SSCircularRingSlider */,
+				CB3A39FC2B7E1A78003720E6 /* PBCircularRingSlider */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -535,13 +535,13 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		CB3A39FC2B7E1A78003720E6 /* SSCircularRingSlider */ = {
+		CB3A39FC2B7E1A78003720E6 /* PBCircularRingSlider */ = {
 			isa = PBXGroup;
 			children = (
 				CB3A39FD2B7E1A78003720E6 /* Extentions.swift */,
-				CB3A39FE2B7E1A78003720E6 /* SSCircularRingSlider.swift */,
+				CB3A39FE2B7E1A78003720E6 /* PBCircularRingSlider.swift */,
 			);
-			path = SSCircularRingSlider;
+			path = PBCircularRingSlider;
 			sourceTree = "<group>";
 		};
 		CB49F25A2B6B88B000FBE709 /* HomeSettings */ = {
@@ -700,7 +700,7 @@
 			};
 			buildConfigurationList = CB303C2D2B60FC3B00B9A770 /* Build configuration list for PBXProject "Innova" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = it;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -821,7 +821,7 @@
 				CB303CAB2B613C1400B9A770 /* IntroductionCell.swift in Sources */,
 				CB303CA52B61399300B9A770 /* IntroductionScreen.swift in Sources */,
 				CB303C862B611A4400B9A770 /* BaseViewController.swift in Sources */,
-				CB3A3A022B7E1A79003720E6 /* SSCircularRingSlider.swift in Sources */,
+				CB3A3A022B7E1A79003720E6 /* PBCircularRingSlider.swift in Sources */,
 				CB303C9F2B61249800B9A770 /* GreenThemeButton.swift in Sources */,
 				CB2BC0D32B6A167F004A5226 /* SuggestionsCell.swift in Sources */,
 				CBF89B7A2B9AECD500FDE95F /* CustomToastView.swift in Sources */,

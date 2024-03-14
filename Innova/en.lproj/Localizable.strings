@@ -53,3 +53,4 @@
 "Since you are the owner of this house, deleting this residence will result in the loss of all related data. This action is irreversible. Continue?" = "Since you are the owner of this house, deleting this residence will result in the loss of all related data. This action is irreversible. Continue?";
 "Leave house" = "Leave house";
 "Device" = "Device";
+"If you think that the temperature set by the device is not accurate, you can adjust it from here. The device now reads 22° C sets the temperature measured by another thermometer." = "If you think that the temperature set by the device is not accurate, you can adjust it from here. The device now reads 22° C sets the temperature measured by another thermometer.";

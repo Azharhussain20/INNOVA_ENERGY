@@ -1,10 +1,10 @@
 import UIKit
 
-protocol SSCircularRingSliderDelegate {
-    func controlValueUpdated(value: Int)
+protocol PBCircularRingSliderDelegate {
+    func controlValueUpdated(value: CGFloat)
 }
 
-open class SSCircularRingSlider: UIView {
+open class PBCircularRingSlider: UIView {
     
     // MARK: -
     // MARK: - Variable declaration
@@ -38,9 +38,9 @@ open class SSCircularRingSlider: UIView {
     var knobSize: CGFloat = 30
     var shouldAddTextLabel: Bool = true
     var extraOffsetOfRadius: CGFloat = 0
-    var arrLabelValues: [Int] = [Int](0...100)
+    var arrLabelValues: [CGFloat] = []
     var currentIndex: Int = 0
-    var delegate: SSCircularRingSliderDelegate?
+    var delegate: PBCircularRingSliderDelegate?
     
     // MARK: -
     // MARK: - Fileprivate variable declaration
@@ -56,15 +56,13 @@ open class SSCircularRingSlider: UIView {
     
     fileprivate var innerRingShape = CAShapeLayer()
     fileprivate var outerRingShape = CAShapeLayer()
-    fileprivate let txtValue: UITextField = {
-        let txtLabel = UITextField()
-        txtLabel.keyboardType = .numberPad
+    fileprivate let txtValue: UILabel = {
+        let txtLabel = UILabel()
         txtLabel.backgroundColor = .clear
         txtLabel.textAlignment = .center
         txtLabel.text = ""
         txtLabel.isUserInteractionEnabled = false
         txtLabel.adjustsFontSizeToFitWidth = true
-        txtLabel.addDoneButtonOnKeyboard()
         return txtLabel
     }()
     
@@ -166,10 +164,6 @@ open class SSCircularRingSlider: UIView {
         createOuterCircularRing()
         addGradientColor()
         
-        if shouldAddEndPoints {
-            //            createEndPoints()
-        }
-        
         // Knob
         if shouldShowKnob {
             createKnobOfSlider()
@@ -192,9 +186,7 @@ open class SSCircularRingSlider: UIView {
     // MARK: - Create inner circular ring
     fileprivate func createInnerCircularRing() {
         innerRingShape.removeIfAdded()
-        
         innerCircularRing = UIBezierPath(arcCenter: centerPoint, radius: circularRingRadius, startAngle: startAngleRadian, endAngle: endAngleRadian, clockwise: true)
-        
         innerRingShape.path = innerCircularRing.cgPath
         innerRingShape.fillColor = UIColor.clear.cgColor
         innerRingShape.strokeColor = self.innerCircleColor
@@ -215,13 +207,11 @@ open class SSCircularRingSlider: UIView {
     // MARK: -  Create outer circle ring
     fileprivate func createOuterCircularRing() {
         outerRingShape.removeIfAdded()
-        
         outerCircularRing = UIBezierPath(arcCenter: centerPoint, radius: circularRingRadius, startAngle: startAngleRadian, endAngle: knobStartingAngleRadian, clockwise: true)
         outerRingShape.path = outerCircularRing.cgPath
         outerRingShape.fillColor = UIColor.clear.cgColor
         outerRingShape.strokeColor = UIColor.red.cgColor
         outerRingShape.lineWidth = outerRingWidth
-        
         self.layer.addSublayer(outerRingShape)
     }
     
@@ -300,9 +290,9 @@ open class SSCircularRingSlider: UIView {
         if currentValue == 0 {
             txtValue.text = "--°"
         } else {
-            txtValue.text = strValue
+            txtValue.fadeTransition(0.4)
+            txtValue.attributedText = Double(Int(currentValue)).attributedString(true)
         }
-        
     }
     
     /// This method updates slider from angle
@@ -310,7 +300,7 @@ open class SSCircularRingSlider: UIView {
     // MARK: - Parameter angleRadian: angle in radians
     fileprivate func setLabel(fromAngleRadian angleRadian: CGFloat) {
         let value = calculateValue(angleRadian: angleRadian)
-        if let index = getClosestElementFromArray(arrValues: arrLabelValues, enteredValue: Int(value)) {
+        if let index = getClosestElementFromArray(arrValues: arrLabelValues, enteredValue: value) {
             setCurrentIndexAndUpdate(index)
         }
     }
@@ -388,7 +378,6 @@ open class SSCircularRingSlider: UIView {
     // MARK: -  Adds color to the gardient layer
     fileprivate func addGradientColor() {
         gradientLayer.removeIfAdded()
-        
         let layer = self.getGradientLayerOf(frame: self.bounds, colors: gradientColors)
         gradientLayer = layer
         gradientLayer.colors = gradientColors
@@ -406,12 +395,12 @@ open class SSCircularRingSlider: UIView {
     
     // MARK: -  Upadtes the value of label
     fileprivate func updateValueOfLabel() {
-        let strValue = "\(arrLabelValues[currentIndex])°"
-        
         if arrLabelValues[currentIndex] == 0 {
             txtValue.text = "--°"
+            txtValue.textColor
         } else {
-            txtValue.text = strValue
+            txtValue.fadeTransition(0.4)
+            txtValue.attributedText = Double(arrLabelValues[currentIndex]).attributedString(true)
         }
     }
     
@@ -516,7 +505,7 @@ open class SSCircularRingSlider: UIView {
 
 // MARK: -
 // MARK: - Extension
-extension SSCircularRingSlider {
+extension PBCircularRingSlider {
     
     // MARK: - Public Methods
     // MARK: -
@@ -604,13 +593,6 @@ extension SSCircularRingSlider {
         setStartPointImage(image: startPointImage)
     }
     
-    /// This method sets textfield delegate
-    ///
-    // MARK: - Parameter viewController: view controller
-    public func setValueTextFieldDelegate(viewController: UIViewController) {
-        self.txtValue.delegate = viewController as? UITextFieldDelegate
-    }
-    
     /// This method sets values for circular ring slider
     ///
     /// - Parameters:
@@ -627,7 +609,7 @@ extension SSCircularRingSlider {
     ///
     /// - Parameters:
     // MARK: - labelValues: array of integer values - currentIndex: current index
-    public func setArrayValues(labelValues: [Int], currentIndex: Int) {
+    public func setArrayValues(labelValues: [CGFloat], currentIndex: Int) {
         self.arrLabelValues = labelValues
         self.currentIndex = currentIndex
         updateValues()
@@ -654,10 +636,11 @@ extension SSCircularRingSlider {
     ///
     // MARK: - Parameters: - arrValues: array of values - enteredValue: enetered value
     /// - Returns: returns closest element
-    public func getClosestElementFromArray(arrValues: Array<Int>, enteredValue: Int) -> Int? {
-        if let closest = arrValues.enumerated().min(by: { abs($0.1 - enteredValue) < abs($1.1 - enteredValue)}) {
+    public func getClosestElementFromArray(arrValues: Array<CGFloat>, enteredValue: CGFloat) -> Int? {
+        if let closest = arrValues.enumerated().min(by: { abs(CGFloat($0.1) - enteredValue) < abs(CGFloat($1.1) - enteredValue) }) {
             return closest.offset
         }
+
         return nil
     }
     

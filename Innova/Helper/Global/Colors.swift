@@ -29,8 +29,8 @@ class AppColors : ThemeColors {
     let btnInActiveViewBorderColor = UIColor(hexString: "#E4E9F2")
     let borderColorOfButtons = UIColor(hexString: "#636569")
     let circleTrack = UIColor(hexString: "#D9D9D9")
-    let gradientOne = UIColor(red: 0.0/255.0, green: 131.0/255.0, blue: 117.0/255.0, alpha: 1.0)
-    let gradientTwo = UIColor(red: 235.0/255.0, green: 128.0/255.0, blue: 86.0/255.0, alpha: 1.0)
-    let gradientThree = UIColor(red: 235.0/255.0, green: 128.0/255.0, blue: 86.0/255.0, alpha: 1.0)
+    let gradientOne = UIColor(red: 0/255, green: 131/255, blue: 117/255, alpha: 1.0)
+    let gradientTwo = UIColor(red: 142/255, green: 177/255, blue: 124/255, alpha: 1.0)
+    let gradientThree = UIColor(red: 244/255, green: 162/255, blue: 97/255, alpha: 1.0)
     let titleBlack = UIColor(red: 31.0/255.0, green: 0.0/255.0, blue: 5.0/255.0, alpha: 1.0)
 }

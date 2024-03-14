@@ -48,6 +48,7 @@ class CustomToastView: UIView {
     
     
     func showToast(_ toastView: CustomToastView) {
+
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
             containerView.layer.shadowColor = UIColor.black.cgColor
             containerView.layer.shadowOffset = CGSize(width: 0, height: 2)

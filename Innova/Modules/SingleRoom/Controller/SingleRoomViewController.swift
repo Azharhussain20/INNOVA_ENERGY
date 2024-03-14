@@ -144,14 +144,9 @@ extension SingleRoomViewController: UITableViewDelegate, UITableViewDataSource, 
         }
         
         let item = temperatureData.sectionData[indexPath.row]
-        
-        
-        let attributedString = item.temperature.attributedString()
-
+        let attributedString = item.temperature.attributedString(false)
         cell.lblTemprature.attributedText = item.isSwitchOn ? attributedString : attributedString
-
         cell.lblRoomName.text = item.roomName + " - \(item.temperature)°"
-
         cell.lblDeviceName.text = item.deviceName
         
         if item.isSwitchOn {

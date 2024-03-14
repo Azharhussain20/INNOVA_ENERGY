@@ -77,12 +77,18 @@ class IntroductionScreen: UIViewController {
     func globalActions() {
         btnLoginWithGoogle.touchUpInside = {
             print("btnLoginWithGoogle")
+            AppInstance.showMessages(message: "Login With Google".localize())
+
         }
         btnLoginWithApple.touchUpInside = {
             print("btnLoginWithApple")
+            AppInstance.showMessages(message: "Login With Apple".localize())
+
         }
         btnRegistration.touchUpInside = {
             print("btnRegistration")
+            AppInstance.showMessages(message: "Registration".localize())
+
         }
         btnLogin.touchUpInside = {
             print("btnLogin")
@@ -113,7 +119,10 @@ extension IntroductionScreen : UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        
+        cell.alpha = 0.0
+        UIView.animate(withDuration: 0.5) {
+            cell.alpha = 1.0
+        }
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

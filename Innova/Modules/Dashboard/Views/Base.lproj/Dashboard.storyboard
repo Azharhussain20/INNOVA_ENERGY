@@ -65,10 +65,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SE8-Qf-1rv">
-                                <rect key="frame" x="32" y="180" width="329" height="672"/>
+                                <rect key="frame" x="30" y="180" width="333" height="563"/>
                                 <subviews>
                                     <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cD6-as-awS">
-                                        <rect key="frame" x="0.0" y="0.0" width="329" height="450"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="450"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="450" id="33K-mT-eDi"/>
@@ -86,19 +86,19 @@
                                         </connections>
                                     </collectionView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNX-jb-qGP">
-                                        <rect key="frame" x="0.0" y="0.0" width="329" height="672"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="563"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="in_emptyDashboard" translatesAutoresizingMaskIntoConstraints="NO" id="wVu-o2-2CI">
-                                                <rect key="frame" x="45" y="40" width="239" height="150"/>
+                                                <rect key="frame" x="47" y="40" width="239" height="150"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It seems that there are no devices in this house." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqt-7B-jbn">
-                                                <rect key="frame" x="30" y="222" width="269" height="37.333333333333314"/>
+                                                <rect key="frame" x="30" y="222" width="273" height="37.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <color key="textColor" name="DarkGray"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLg-dJ-So4" customClass="GreenBackGroundPlus" customModule="Innova" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="291.33333333333331" width="329" height="50"/>
+                                                <rect key="frame" x="0.0" y="291.33333333333331" width="333" height="50"/>
                                                 <color key="backgroundColor" name="PrimaryColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Bb1-wD-90P"/>
@@ -110,7 +110,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11y-wx-B2v" customClass="GreenBordered" customModule="Innova" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="357.33333333333337" width="329" height="50"/>
+                                                <rect key="frame" x="0.0" y="357.33333333333337" width="333" height="50"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Add a device">
@@ -141,16 +141,16 @@
                         <viewLayoutGuide key="safeArea" id="x3X-wP-GUm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="SE8-Qf-1rv" firstAttribute="trailing" secondItem="x3X-wP-GUm" secondAttribute="trailing" constant="-32" id="85R-xM-gVJ"/>
+                            <constraint firstItem="x3X-wP-GUm" firstAttribute="bottom" secondItem="SE8-Qf-1rv" secondAttribute="bottom" constant="26" id="Ccp-qg-2h7"/>
                             <constraint firstItem="OqF-w0-rmd" firstAttribute="leading" secondItem="x3X-wP-GUm" secondAttribute="leading" constant="20" id="DVD-SH-ZF0"/>
                             <constraint firstItem="x3X-wP-GUm" firstAttribute="trailing" secondItem="OqF-w0-rmd" secondAttribute="trailing" constant="20" id="G3s-6e-KGs"/>
                             <constraint firstItem="SE8-Qf-1rv" firstAttribute="top" secondItem="OqF-w0-rmd" secondAttribute="bottom" id="GXx-HF-4ty"/>
                             <constraint firstItem="GS9-e8-jjP" firstAttribute="top" secondItem="x3X-wP-GUm" secondAttribute="top" id="Lie-f7-JNw"/>
                             <constraint firstItem="wVu-o2-2CI" firstAttribute="height" secondItem="HYs-pQ-bXl" secondAttribute="height" multiplier="0.176056" id="RXZ-ua-gMy"/>
+                            <constraint firstAttribute="trailing" secondItem="SE8-Qf-1rv" secondAttribute="trailing" constant="30" id="UWl-mG-E4o"/>
                             <constraint firstItem="wVu-o2-2CI" firstAttribute="width" secondItem="HYs-pQ-bXl" secondAttribute="width" multiplier="0.608142" id="ViA-sN-HwK"/>
-                            <constraint firstAttribute="bottom" secondItem="SE8-Qf-1rv" secondAttribute="bottom" id="Z1K-Q8-KzR"/>
                             <constraint firstItem="GS9-e8-jjP" firstAttribute="leading" secondItem="x3X-wP-GUm" secondAttribute="leading" id="mah-Hk-oII"/>
-                            <constraint firstItem="SE8-Qf-1rv" firstAttribute="leading" secondItem="x3X-wP-GUm" secondAttribute="leading" constant="32" id="pVw-F1-ayf"/>
+                            <constraint firstItem="SE8-Qf-1rv" firstAttribute="leading" secondItem="x3X-wP-GUm" secondAttribute="leading" constant="30" id="sxv-8x-npI"/>
                             <constraint firstItem="OqF-w0-rmd" firstAttribute="top" secondItem="GS9-e8-jjP" secondAttribute="bottom" id="wuN-kN-eOg"/>
                             <constraint firstItem="x3X-wP-GUm" firstAttribute="trailing" secondItem="GS9-e8-jjP" secondAttribute="trailing" id="zlm-gZ-BQA"/>
                         </constraints>

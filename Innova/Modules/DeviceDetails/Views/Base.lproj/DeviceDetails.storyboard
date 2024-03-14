@@ -88,7 +88,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rqe-nD-c6K">
                                                 <rect key="frame" x="0.0" y="108" width="393" height="300"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFn-rB-vbO" customClass="SSCircularRingSlider" customModule="Innova" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFn-rB-vbO" customClass="PBCircularRingSlider" customModule="Innova" customModuleProvider="target">
                                                         <rect key="frame" x="76.666666666666686" y="0.0" width="240" height="240"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -146,7 +146,7 @@
                                                                         <rect key="frame" x="84.333333333333343" y="0.0" width="30" height="32"/>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                        <state key="normal" title="Off">
+                                                                        <state key="normal" title="Min">
                                                                             <color key="titleColor" name="PrimaryColor"/>
                                                                         </state>
                                                                         <connections>
@@ -361,6 +361,13 @@
                                     <constraint firstAttribute="height" constant="22" id="Va3-uo-qQ8"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzL-3V-1vK">
+                                <rect key="frame" x="0.0" y="427" width="393" height="40"/>
+                                <color key="backgroundColor" name="Gray5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UBO-PB-EOU"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5v-oz-LfJ">
                                 <rect key="frame" x="0.0" y="753" width="393" height="55"/>
                                 <subviews>
@@ -394,6 +401,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="f0D-rf-E7K"/>
                                 </constraints>
@@ -433,7 +441,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="mXI-kw-bdP" secondAttribute="trailing" id="2ue-hv-22l"/>
                                             <constraint firstAttribute="bottom" secondItem="mXI-kw-bdP" secondAttribute="bottom" id="INA-Uo-Y5y"/>
@@ -442,6 +450,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wxB-jA-TtJ"/>
@@ -450,7 +459,10 @@
                             <constraint firstItem="R5v-oz-LfJ" firstAttribute="bottom" secondItem="wxB-jA-TtJ" secondAttribute="bottom" constant="-10" id="5j1-Oi-kA8"/>
                             <constraint firstItem="1D7-HO-Km2" firstAttribute="top" secondItem="sdy-F1-BzY" secondAttribute="bottom" id="9ua-1A-FzU"/>
                             <constraint firstItem="wxB-jA-TtJ" firstAttribute="trailing" secondItem="R5v-oz-LfJ" secondAttribute="trailing" id="DVa-u7-tYp"/>
+                            <constraint firstItem="wxB-jA-TtJ" firstAttribute="trailing" secondItem="nzL-3V-1vK" secondAttribute="trailing" id="FBg-Da-BeW"/>
                             <constraint firstAttribute="trailing" secondItem="sdy-F1-BzY" secondAttribute="trailing" id="Qau-6K-kZh"/>
+                            <constraint firstItem="nzL-3V-1vK" firstAttribute="centerY" secondItem="1D7-HO-Km2" secondAttribute="centerY" constant="10" id="Vjm-jY-bx8"/>
+                            <constraint firstItem="nzL-3V-1vK" firstAttribute="leading" secondItem="wxB-jA-TtJ" secondAttribute="leading" id="a9y-wS-Csj"/>
                             <constraint firstItem="Xgv-86-TMt" firstAttribute="width" secondItem="fSb-b4-Gst" secondAttribute="width" multiplier="0.500424" id="gon-NY-FLF"/>
                             <constraint firstItem="1D7-HO-Km2" firstAttribute="leading" secondItem="wxB-jA-TtJ" secondAttribute="leading" constant="30" id="kIe-ve-7Va"/>
                             <constraint firstItem="sdy-F1-BzY" firstAttribute="leading" secondItem="fSb-b4-Gst" secondAttribute="leading" id="mPq-Vu-ZVp"/>
@@ -920,9 +932,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lblCautions" destination="rj3-3a-2gy" id="iyM-El-vSE"/>
+                        <outlet property="lblTemperature" destination="jWl-Vf-eSg" id="Yoe-yM-bYW"/>
                         <outlet property="minusBtn" destination="QX1-mW-Oa3" id="be9-r3-7w8"/>
                         <outlet property="plusBtn" destination="mhB-Uh-xdW" id="Yyn-lf-iih"/>
-                        <outlet property="temperatureLbl" destination="jWl-Vf-eSg" id="iNK-Rl-btq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmQ-fH-kQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
