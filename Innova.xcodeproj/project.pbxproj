@@ -61,6 +61,15 @@
 		CB49F2662B6BB4FE00FBE709 /* EditPositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB49F2652B6BB4FE00FBE709 /* EditPositionViewController.swift */; };
 		CB4FB5E32B7F1EE700D89361 /* ModeTypesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4FB5E12B7F1EE700D89361 /* ModeTypesCell.swift */; };
 		CB4FB5E42B7F1EE700D89361 /* ModeTypesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4FB5E22B7F1EE700D89361 /* ModeTypesCell.xib */; };
+		CB5393FB2BAD46BD002886F4 /* AddCalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5393FA2BAD46BD002886F4 /* AddCalenderViewController.swift */; };
+		CB5393FE2BAD4AE5002886F4 /* SeasonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5393FC2BAD4AE5002886F4 /* SeasonsCell.swift */; };
+		CB5393FF2BAD4AE5002886F4 /* SeasonsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5393FD2BAD4AE5002886F4 /* SeasonsCell.xib */; };
+		CB5394012BAD5741002886F4 /* CalenderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5394002BAD5741002886F4 /* CalenderDetailsViewController.swift */; };
+		CB5394082BAD5A9E002886F4 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5394072BAD5A9E002886F4 /* Calendar.storyboard */; };
+		CB53940B2BAD5B80002886F4 /* DaysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5394092BAD5B80002886F4 /* DaysCell.swift */; };
+		CB53940C2BAD5B80002886F4 /* DaysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB53940A2BAD5B80002886F4 /* DaysCell.xib */; };
+		CB53940F2BAD678E002886F4 /* PresetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB53940D2BAD678E002886F4 /* PresetCell.swift */; };
+		CB5394102BAD678E002886F4 /* PresetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB53940E2BAD678E002886F4 /* PresetCell.xib */; };
 		CB601B012B974B9200C5C9F9 /* DeviceSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB601B002B974B9200C5C9F9 /* DeviceSettingsViewController.swift */; };
 		CB653E7A2B6A69A7005563B8 /* DashboardTempCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB653E782B6A69A7005563B8 /* DashboardTempCell.swift */; };
 		CBA3FA652B7B9DA900C9DA61 /* SingleRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3FA642B7B9DA900C9DA61 /* SingleRoomViewController.swift */; };
@@ -84,8 +93,14 @@
 		CBB8E49A2B9880FF00F8F716 /* SingleRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB8E49C2B9880FF00F8F716 /* SingleRoom.storyboard */; };
 		CBB8E4A02B98812F00F8F716 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBB8E4A22B98812F00F8F716 /* Localizable.strings */; };
 		CBB9BA5B2B95F457007D1475 /* CreateHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB9BA5A2B95F457007D1475 /* CreateHomeViewController.swift */; };
+		CBC35D8B2BAC615A0041A8BA /* customInnovaSegmentation.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC35D8A2BAC61590041A8BA /* customInnovaSegmentation.xib */; };
+		CBC35D8D2BAC61630041A8BA /* customInnovaSegmentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC35D8C2BAC61630041A8BA /* customInnovaSegmentation.swift */; };
 		CBC9DD052B84B82D00C622CC /* CustomSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC9DD042B84B82D00C622CC /* CustomSplashScreen.swift */; };
 		CBD7C5D52B8C61A00027E0AD /* ModeManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7C5D42B8C61A00027E0AD /* ModeManagerViewController.swift */; };
+		CBE78EB42BA7FDB400E68226 /* FanModeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE78EB22BA7FDB400E68226 /* FanModeSelector.swift */; };
+		CBE78EB52BA7FDB400E68226 /* FanModeSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE78EB32BA7FDB400E68226 /* FanModeSelector.xib */; };
+		CBE78EB72BA7FF3100E68226 /* TemperatureSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE78EB62BA7FF3100E68226 /* TemperatureSlider.swift */; };
+		CBE78EBA2BA8026B00E68226 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE78EB92BA8026B00E68226 /* Device.swift */; };
 		CBF89B7A2B9AECD500FDE95F /* CustomToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF89B792B9AECD500FDE95F /* CustomToastView.swift */; };
 		CBF89B7C2B9AEDCC00FDE95F /* CustomToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBF89B7B2B9AEDCC00FDE95F /* CustomToastView.xib */; };
 		CBF89B7E2B9B3D0E00FDE95F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CBF89B7D2B9B3D0E00FDE95F /* README.md */; };
@@ -148,6 +163,15 @@
 		CB49F2652B6BB4FE00FBE709 /* EditPositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPositionViewController.swift; sourceTree = "<group>"; };
 		CB4FB5E12B7F1EE700D89361 /* ModeTypesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeTypesCell.swift; sourceTree = "<group>"; };
 		CB4FB5E22B7F1EE700D89361 /* ModeTypesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModeTypesCell.xib; sourceTree = "<group>"; };
+		CB5393FA2BAD46BD002886F4 /* AddCalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCalenderViewController.swift; sourceTree = "<group>"; };
+		CB5393FC2BAD4AE5002886F4 /* SeasonsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsCell.swift; sourceTree = "<group>"; };
+		CB5393FD2BAD4AE5002886F4 /* SeasonsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonsCell.xib; sourceTree = "<group>"; };
+		CB5394002BAD5741002886F4 /* CalenderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderDetailsViewController.swift; sourceTree = "<group>"; };
+		CB5394072BAD5A9E002886F4 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		CB5394092BAD5B80002886F4 /* DaysCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysCell.swift; sourceTree = "<group>"; };
+		CB53940A2BAD5B80002886F4 /* DaysCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaysCell.xib; sourceTree = "<group>"; };
+		CB53940D2BAD678E002886F4 /* PresetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetCell.swift; sourceTree = "<group>"; };
+		CB53940E2BAD678E002886F4 /* PresetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresetCell.xib; sourceTree = "<group>"; };
 		CB601B002B974B9200C5C9F9 /* DeviceSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSettingsViewController.swift; sourceTree = "<group>"; };
 		CB653E782B6A69A7005563B8 /* DashboardTempCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTempCell.swift; sourceTree = "<group>"; };
 		CBA3FA642B7B9DA900C9DA61 /* SingleRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRoomViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +198,8 @@
 		CBB8E4A12B98812F00F8F716 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CBB8E4A32B98813200F8F716 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CBB9BA5A2B95F457007D1475 /* CreateHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHomeViewController.swift; sourceTree = "<group>"; };
+		CBC35D8A2BAC61590041A8BA /* customInnovaSegmentation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customInnovaSegmentation.xib; sourceTree = "<group>"; };
+		CBC35D8C2BAC61630041A8BA /* customInnovaSegmentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customInnovaSegmentation.swift; sourceTree = "<group>"; };
 		CBC9DD042B84B82D00C622CC /* CustomSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplashScreen.swift; sourceTree = "<group>"; };
 		CBD7C5D42B8C61A00027E0AD /* ModeManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeManagerViewController.swift; sourceTree = "<group>"; };
 		CBE1406D2B988BEC0016E83E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Introduction.strings; sourceTree = "<group>"; };
@@ -182,6 +208,10 @@
 		CBE140772B988C940016E83E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/DashboardTempCell.strings; sourceTree = "<group>"; };
 		CBE140792B98907F0016E83E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Dashboard.strings; sourceTree = "<group>"; };
 		CBE1407B2B9890800016E83E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Dashboard.strings; sourceTree = "<group>"; };
+		CBE78EB22BA7FDB400E68226 /* FanModeSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanModeSelector.swift; sourceTree = "<group>"; };
+		CBE78EB32BA7FDB400E68226 /* FanModeSelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FanModeSelector.xib; sourceTree = "<group>"; };
+		CBE78EB62BA7FF3100E68226 /* TemperatureSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureSlider.swift; sourceTree = "<group>"; };
+		CBE78EB92BA8026B00E68226 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		CBF239AF2B998C76005FB5BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DeviceDetails.strings; sourceTree = "<group>"; };
 		CBF239B12B998C7A005FB5BC /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/DeviceDetails.strings; sourceTree = "<group>"; };
 		CBF239B72B99AE5F005FB5BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Settings.strings; sourceTree = "<group>"; };
@@ -248,10 +278,16 @@
 			children = (
 				CB262F2F2B68E1EE00FD2E3A /* customDropDownCell.swift */,
 				CBB8E46C2B9880B200F8F716 /* customDropDownCell.xib */,
-				CB49F2562B6B68C600FBE709 /* HeaderSupplementaryView.swift */,
-				CBB8E4702B9880B600F8F716 /* HeaderSupplementaryView.xib */,
+				CBC35D8C2BAC61630041A8BA /* customInnovaSegmentation.swift */,
+				CBC35D8A2BAC61590041A8BA /* customInnovaSegmentation.xib */,
 				CB653E782B6A69A7005563B8 /* DashboardTempCell.swift */,
 				CBB8E4742B9880B900F8F716 /* DashboardTempCell.xib */,
+				CB49F2562B6B68C600FBE709 /* HeaderSupplementaryView.swift */,
+				CBB8E4702B9880B600F8F716 /* HeaderSupplementaryView.xib */,
+				CB5393FC2BAD4AE5002886F4 /* SeasonsCell.swift */,
+				CB53940D2BAD678E002886F4 /* PresetCell.swift */,
+				CB53940E2BAD678E002886F4 /* PresetCell.xib */,
+				CB5393FD2BAD4AE5002886F4 /* SeasonsCell.xib */,
 				CB262F332B68EEF600FD2E3A /* ServiceCell.swift */,
 				CBB8E4782B9880BD00F8F716 /* ServiceCell.xib */,
 			);
@@ -399,6 +435,7 @@
 		CB303C872B611AAC00B9A770 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CB5394022BAD5A59002886F4 /* Calender */,
 				CB303C882B611ADE00B9A770 /* Authentication */,
 				CB303C892B611AED00B9A770 /* Dashboard */,
 				CB3A39EE2B7DE6CC003720E6 /* DeviceDetails */,
@@ -490,6 +527,8 @@
 		CB3A39EE2B7DE6CC003720E6 /* DeviceDetails */ = {
 			isa = PBXGroup;
 			children = (
+				CBE78EB12BA7FD9400E68226 /* customXIB */,
+				CBE78EB82BA7FFAA00E68226 /* SwiftUI */,
 				CB3A39F22B7DE701003720E6 /* Controllers */,
 				CB3A39F12B7DE6FB003720E6 /* Views */,
 				CB3A39F02B7DE6EF003720E6 /* Models */,
@@ -591,6 +630,50 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CB5394022BAD5A59002886F4 /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				CB5394062BAD5A73002886F4 /* Views */,
+				CB5394052BAD5A6D002886F4 /* Controllers */,
+				CB5394042BAD5A68002886F4 /* Model */,
+				CB5394032BAD5A5E002886F4 /* Cell */,
+			);
+			path = Calender;
+			sourceTree = "<group>";
+		};
+		CB5394032BAD5A5E002886F4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CB5394092BAD5B80002886F4 /* DaysCell.swift */,
+				CB53940A2BAD5B80002886F4 /* DaysCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CB5394042BAD5A68002886F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB5394052BAD5A6D002886F4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB5393FA2BAD46BD002886F4 /* AddCalenderViewController.swift */,
+				CB5394002BAD5741002886F4 /* CalenderDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CB5394062BAD5A73002886F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB5394072BAD5A9E002886F4 /* Calendar.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CBA3FA5D2B7B883D00C9DA61 /* SingleRoom */ = {
 			isa = PBXGroup;
 			children = (
@@ -633,6 +716,24 @@
 				CB024D952B972D7B00082277 /* MoveDeviceToRoomViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBE78EB12BA7FD9400E68226 /* customXIB */ = {
+			isa = PBXGroup;
+			children = (
+				CBE78EB92BA8026B00E68226 /* Device.swift */,
+				CBE78EB22BA7FDB400E68226 /* FanModeSelector.swift */,
+				CBE78EB32BA7FDB400E68226 /* FanModeSelector.xib */,
+			);
+			path = customXIB;
+			sourceTree = "<group>";
+		};
+		CBE78EB82BA7FFAA00E68226 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				CBE78EB62BA7FF3100E68226 /* TemperatureSlider.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		CBF89B782B9AECC000FDE95F /* Toast */ = {
@@ -727,9 +828,11 @@
 				CBB8E4922B9880F500F8F716 /* Rooms.storyboard in Resources */,
 				CB13961B2B626CB300CF4196 /* HelveticaNeueBd.ttf in Resources */,
 				CBB8E47A2B9880C300F8F716 /* Dashboard.storyboard in Resources */,
+				CB5394102BAD678E002886F4 /* PresetCell.xib in Resources */,
 				CBF89B7C2B9AEDCC00FDE95F /* CustomToastView.xib in Resources */,
 				CB1396202B626CB300CF4196 /* HelveticaNeueIt.ttf in Resources */,
 				CBB8E46E2B9880B600F8F716 /* HeaderSupplementaryView.xib in Resources */,
+				CB5394082BAD5A9E002886F4 /* Calendar.storyboard in Resources */,
 				CB1396212B626CB300CF4196 /* HelveticaNeueLt.ttf in Resources */,
 				CBF89B7E2B9B3D0E00FDE95F /* README.md in Resources */,
 				CBB8E4862B9880E300F8F716 /* DeviceCell.xib in Resources */,
@@ -739,9 +842,11 @@
 				CB13961C2B626CB300CF4196 /* HelveticaNeue Light.ttf in Resources */,
 				CBB8E4A02B98812F00F8F716 /* Localizable.strings in Resources */,
 				CBB8E4722B9880B900F8F716 /* DashboardTempCell.xib in Resources */,
+				CB53940C2BAD5B80002886F4 /* DaysCell.xib in Resources */,
 				CB1396232B626CB300CF4196 /* HelveticaNeueHv.ttf in Resources */,
 				CB303C422B60FC3D00B9A770 /* LaunchScreen.storyboard in Resources */,
 				CBB8E4962B9880FA00F8F716 /* TemperatureCell.xib in Resources */,
+				CB5393FF2BAD4AE5002886F4 /* SeasonsCell.xib in Resources */,
 				CBB8E47E2B9880D300F8F716 /* DeviceDetails.storyboard in Resources */,
 				CBB8E48A2B9880E800F8F716 /* Settings.storyboard in Resources */,
 				CBB8E49A2B9880FF00F8F716 /* SingleRoom.storyboard in Resources */,
@@ -750,9 +855,11 @@
 				CB1396192B626CB300CF4196 /* HelveticaNeueMed.ttf in Resources */,
 				CB13961D2B626CB300CF4196 /* HelveticaNeue BlackCond.ttf in Resources */,
 				CBB8E48E2B9880F100F8F716 /* SuggestionsCell.xib in Resources */,
+				CBC35D8B2BAC615A0041A8BA /* customInnovaSegmentation.xib in Resources */,
 				CB303C3F2B60FC3D00B9A770 /* Assets.xcassets in Resources */,
 				CB4FB5E42B7F1EE700D89361 /* ModeTypesCell.xib in Resources */,
 				CB13961A2B626CB300CF4196 /* HelveticaNeue Medium.ttf in Resources */,
+				CBE78EB52BA7FDB400E68226 /* FanModeSelector.xib in Resources */,
 				CBB8E4762B9880BD00F8F716 /* ServiceCell.xib in Resources */,
 				CB1396222B626CB300CF4196 /* HelveticaNeue.ttf in Resources */,
 			);
@@ -809,11 +916,15 @@
 			files = (
 				CB303C942B61208E00B9A770 /* AppConfiguration.swift in Sources */,
 				CB303C642B61187100B9A770 /* Utilities.swift in Sources */,
+				CB5393FE2BAD4AE5002886F4 /* SeasonsCell.swift in Sources */,
 				CB262F382B68FD0300FD2E3A /* GreenBackGroundPlus.swift in Sources */,
+				CBE78EBA2BA8026B00E68226 /* Device.swift in Sources */,
 				CB262F2A2B68C8D500FD2E3A /* HomeViewController.swift in Sources */,
+				CBC35D8D2BAC61630041A8BA /* customInnovaSegmentation.swift in Sources */,
 				CBA3FA652B7B9DA900C9DA61 /* SingleRoomViewController.swift in Sources */,
 				CB303C6E2B61191B00B9A770 /* Colors.swift in Sources */,
 				CB262F3A2B68FDD700FD2E3A /* GreenBordered.swift in Sources */,
+				CB53940B2BAD5B80002886F4 /* DaysCell.swift in Sources */,
 				CB262F352B68EEF600FD2E3A /* ServiceCell.swift in Sources */,
 				C196E4512B7CFEBD00BB89DC /* GreenTextBorderlessButton.swift in Sources */,
 				CB653E7A2B6A69A7005563B8 /* DashboardTempCell.swift in Sources */,
@@ -831,16 +942,21 @@
 				CB303C752B61196F00B9A770 /* GlobalExtensions.swift in Sources */,
 				9E2C784E2B66A0870007A26B /* Alerts.swift in Sources */,
 				CB262F282B68C81F00FD2E3A /* DashTabController.swift in Sources */,
+				CB53940F2BAD678E002886F4 /* PresetCell.swift in Sources */,
 				CB49F2622B6B88F400FBE709 /* HomeSettings.swift in Sources */,
 				CB3A3A012B7E1A78003720E6 /* Extentions.swift in Sources */,
 				CB33F6162B6CBCBF0091CDC9 /* OperationModeCell.swift in Sources */,
 				CB024D962B972D7B00082277 /* MoveDeviceToRoomViewController.swift in Sources */,
 				CB303C362B60FC3B00B9A770 /* AppDelegate.swift in Sources */,
 				CB303C712B61194500B9A770 /* UIColor+Extensions.swift in Sources */,
+				CB5393FB2BAD46BD002886F4 /* AddCalenderViewController.swift in Sources */,
 				CB262F1E2B68B87D00FD2E3A /* GreenBorderWithArrow.swift in Sources */,
 				CBB8E45A2B98375400F8F716 /* TemperatureManagerViewController.swift in Sources */,
 				CB262F2C2B68C90200FD2E3A /* CalenderViewController.swift in Sources */,
 				CB49F2582B6B68C600FBE709 /* HeaderSupplementaryView.swift in Sources */,
+				CBE78EB42BA7FDB400E68226 /* FanModeSelector.swift in Sources */,
+				CBE78EB72BA7FF3100E68226 /* TemperatureSlider.swift in Sources */,
+				CB5394012BAD5741002886F4 /* CalenderDetailsViewController.swift in Sources */,
 				CB262F312B68E1EE00FD2E3A /* customDropDownCell.swift in Sources */,
 				CBB8E4572B98322700F8F716 /* InformationCell.swift in Sources */,
 				CB303C662B61189600B9A770 /* GlobalClasses.swift in Sources */,

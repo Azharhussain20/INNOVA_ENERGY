@@ -309,6 +309,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         if collectionView == servicesCollection {
             let size = (data[indexPath.row].text as NSString).size(withAttributes: [NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 16) as Any])
             return CGSize(width: size.width + 52.0, height: 76)
+            
+           
         } else {
             let width = collectionView.bounds.width
             let numberOfItemsPerRow: CGFloat = 2

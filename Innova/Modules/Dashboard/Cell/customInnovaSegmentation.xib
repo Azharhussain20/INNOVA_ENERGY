@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="customInnovaSegmentation" customModule="Innova" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCalendar" destination="NcA-sg-fZo" id="ina-oB-42f"/>
+                <outlet property="btnPreset" destination="UvI-CO-TNp" id="pdb-kA-iHr"/>
+                <outlet property="mainView" destination="QAa-6b-bVX" id="3oq-zr-DnI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QAa-6b-bVX">
+                    <rect key="frame" x="30" y="0.0" width="333" height="40"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7GI-bd-DZ4">
+                            <rect key="frame" x="0.0" y="0.0" width="333" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcA-sg-fZo">
+                                    <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="40"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Calendari"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvI-CO-TNp">
+                                    <rect key="frame" x="166.66666666666663" y="0.0" width="166.33333333333337" height="40"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Preset"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="Gray5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9Gl-vI-3ds"/>
+                        <constraint firstAttribute="trailing" secondItem="7GI-bd-DZ4" secondAttribute="trailing" id="As3-hA-dry"/>
+                        <constraint firstAttribute="bottom" secondItem="7GI-bd-DZ4" secondAttribute="bottom" id="HKc-tV-QDF"/>
+                        <constraint firstItem="7GI-bd-DZ4" firstAttribute="top" secondItem="QAa-6b-bVX" secondAttribute="top" id="c5x-fl-VrA"/>
+                        <constraint firstItem="7GI-bd-DZ4" firstAttribute="leading" secondItem="QAa-6b-bVX" secondAttribute="leading" id="cOn-6y-ymG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="Radius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QAa-6b-bVX" secondAttribute="trailing" constant="30" id="RMz-R1-jW3"/>
+                <constraint firstItem="QAa-6b-bVX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="j4m-FJ-x8g"/>
+                <constraint firstItem="QAa-6b-bVX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uLe-29-VZJ"/>
+                <constraint firstAttribute="bottom" secondItem="QAa-6b-bVX" secondAttribute="bottom" id="yhl-VX-35X"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-163" y="18"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Gray5">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FanModeSelector" customModule="Innova" customModuleProvider="target">
+            <connections>
+                <outlet property="mainView" destination="iN0-l3-epB" id="0nW-XT-lwM"/>
+                <outlet property="pickerView" destination="Nme-94-vhK" id="ug6-d8-YuP"/>
+                <outlet property="pickerViewHeightConstraint" destination="VBU-c9-GtW" id="kwU-8g-qvk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="176" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fan mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBA-0f-57c">
+                    <rect key="frame" x="16" y="19" width="74.333333333333329" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nme-94-vhK">
+                    <rect key="frame" x="90" y="-31" width="70" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="3Pd-cC-hAK"/>
+                        <constraint firstAttribute="height" constant="120" id="VBU-c9-GtW"/>
+                    </constraints>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" name="Gray5"/>
+            <constraints>
+                <constraint firstItem="cBA-0f-57c" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZRt-GO-NlE"/>
+                <constraint firstItem="Nme-94-vhK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jlz-g1-beq"/>
+                <constraint firstItem="cBA-0f-57c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="kgY-qZ-poo"/>
+                <constraint firstAttribute="trailing" secondItem="Nme-94-vhK" secondAttribute="trailing" constant="16" id="wfs-qw-8FJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="Radius">
+                    <real key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="45.038167938931295" y="-280.28169014084506"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Gray5">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

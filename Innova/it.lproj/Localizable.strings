@@ -54,5 +54,30 @@
 "Leave house" = "Lascia casa";
 "Device" = "Dispositivo";
 "If you think that the temperature set by the device is not accurate, you can adjust it from here. The device now reads 22° C sets the temperature measured by another thermometer." = "Se ritieni che la temperatura impostata dal dispositivo non sia esatta puoi regolarla da qui. Ora il dispositivo rileva 22° C imposta la temperatura misurata da un altro termometro.";
+"Calendaring" = "Calendarizzazione";
+"Add a calendar" = "Aggiungi un calendario";
 
+"Spring" = "Primaverile";
+"Summer" = "Estivo";
+"Autumnal" = "Autunnale";
+"Winter" = "Invernale";
+"On holiday" = "In vacanza";
 
+"Monday" = "Lunedì";
+"Tuesday" = "Martedì";
+"Wednesday" = "Mercoledì";
+"Thursday" = "Giovedì";
+"Friday" = "Venerdì";
+"Saturday" = "Sabato";
+"Sunday" = "Domenica";
+"Pertaining to spring, the season that follows winter and precedes summer." = "Relativo alla primavera, la stagione che segue l'inverno e precede l'estate.";
+"Pertaining to summer, the warmest season of the year." = "Relativo all'estate, la stagione calda dell'anno.";
+"Pertaining to autumn/fall, the season that follows summer and precedes winter." = "Relativo all'autunno, la stagione che segue l'estate e precede l'inverno.";
+"Pertaining to winter, the coldest season of the year." = "Relativo all'inverno, la stagione più fredda dell'anno.";
+"To be in a period of rest or leisure away from home, during a vacation." = "Essere in periodo di riposo o svago lontano da casa, durante un periodo di vacanza.";
+"Ok" = "Ok";
+"Antifreeze" = "Antifreeze";
+"Night" = "Notte";
+"Echo" = "Eco";
+"Out" = "Fuori";
+"Comfort" = "Comfort";

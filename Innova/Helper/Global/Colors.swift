@@ -16,6 +16,9 @@ protocol ThemeColors {
     var gradientThree: UIColor { get }
     var titleBlack: UIColor { get }
     var circleTrack: UIColor { get }
+    var grayFive: UIColor { get }
+    var grayTwo: UIColor { get }
+
 }
 
 class AppColors : ThemeColors {
@@ -29,6 +32,9 @@ class AppColors : ThemeColors {
     let btnInActiveViewBorderColor = UIColor(hexString: "#E4E9F2")
     let borderColorOfButtons = UIColor(hexString: "#636569")
     let circleTrack = UIColor(hexString: "#D9D9D9")
+    let grayFive = UIColor(hexString: "#F8F8F8")
+    var grayTwo = UIColor(hexString: "#CACACA")
+
     let gradientOne = UIColor(red: 0/255, green: 131/255, blue: 117/255, alpha: 1.0)
     let gradientTwo = UIColor(red: 142/255, green: 177/255, blue: 124/255, alpha: 1.0)
     let gradientThree = UIColor(red: 244/255, green: 162/255, blue: 97/255, alpha: 1.0)

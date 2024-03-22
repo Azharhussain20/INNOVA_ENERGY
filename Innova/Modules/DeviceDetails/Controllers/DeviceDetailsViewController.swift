@@ -1,4 +1,5 @@
 import UIKit
+import SwiftUI
 import DropDown
 
 struct Mode {
@@ -7,20 +8,12 @@ struct Mode {
     let steps: String
     var isSelected: Bool
 }
-class DeviceDetailsViewController: BaseViewController, dateRangeSelectionViewControllerDelegate{
-    func selectedRanges(from: Date, toDate: Date) {
-        self.fromDate = from
-        self.toDate = toDate
-    }
-    
+class DeviceDetailsViewController: BaseViewController, dateRangeSelectionViewControllerDelegate, FanModeSelectorDelegate, TemperatureSliderViewModelDelegate{
     //------------------------------------------
     //MARK: - Outlets -
-    @IBOutlet weak var fanModeView: UIStackView!
-    @IBOutlet weak var btnChangeFanSpeed: UIButton!
     @IBOutlet weak var CollectionMode: UICollectionView!
-    @IBOutlet var circularRingSlider: PBCircularRingSlider!
-    @IBOutlet weak var btnPowerSwitch: UIButton!
-
+    @IBOutlet var circularRingSlider: UIView!
+    @IBOutlet weak var fanModeView: FanModeSelector!
     //------------------------------------------
     //MARK: - Class Variables -
     var fromDate = Date()
@@ -49,13 +42,19 @@ class DeviceDetailsViewController: BaseViewController, dateRangeSelectionViewCon
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationSetup()
-        setCircularRingSliderColor()
         xibRegisterations()
+        loadTempratureManager()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        configurationDropDown()
-
+    func loadTempratureManager(){
+        let viewModel = TemperatureSliderViewModel()
+        viewModel.delegate = self
+        let childView = UIHostingController(rootView: TemperatureSlider(sliderData: viewModel))
+        addChild(childView)
+        childView.view.frame = circularRingSlider.bounds
+        circularRingSlider.addSubview(childView.view)
+        childView.didMove(toParent: self)
+        fanModeView.delegate = self
     }
     
     //------------------------------------------
@@ -71,47 +70,16 @@ class DeviceDetailsViewController: BaseViewController, dateRangeSelectionViewCon
         }
     }
     
-    func configurationDropDown() {
-        dropDown.anchorView = btnChangeFanSpeed
-        dropDown.dataSource = ["Off".localize(), "Min".localize(), "Max".localize()]
-        dropDown.topOffset = CGPoint(x: 0, y: -(dropDown.anchorView?.plainView.bounds.height)! + 16)
-        dropDown.cornerRadius = 12.0
-        dropDown.dismissMode = .onTap
-        dropDown.direction = .bottom
-        dropDown.dimmedBackgroundColor = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 0.5)
-        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
-            if item == "Off".localize() {
-                switchOff()
-            } else {
-                switchOn(withOldTemperature: 221)
-            }
-            btnChangeFanSpeed.setTitle(item, for: .normal)
-        }
-        DropDown.appearance().backgroundColor = UIColor.white
-        DropDown.appearance().cellHeight = 44.0
-    }
-    
     func getbarButtons(image: String, setTag: Int) -> UIBarButtonItem {
         let button: UIButton = UIButton(type: UIButton.ButtonType.custom)
         button.setImage(UIImage(named: image), for: UIControl.State.normal)
-        button.addTarget(self, action: #selector(btnAlertTapped), for: UIControl.Event.touchUpInside)
+        button.addTarget(self, action: #selector(btnBarItemGearTapped), for: UIControl.Event.touchUpInside)
         button.frame = CGRect(x: 0, y: 0, width: 32, height: 32)
         button.tag = setTag
         let barButton = UIBarButtonItem(customView: button)
         return barButton
     }
     
-    func switchOff() {
-        btnPowerSwitch.isSelected = false
-        btnChangeFanSpeed.setTitleColor(appConfig.appColors.btnInActiveTextColor, for: .normal)
-        circularRingSlider.setValues(initialValue: arrValues[0], minValue: arrValues[0], maxValue: arrValues[arrValues.count - 1])
-    }
-    
-    func switchOn(withOldTemperature : Int) {
-        btnPowerSwitch.isSelected = true
-        btnChangeFanSpeed.setTitleColor(appConfig.appColors.themeColor, for: .normal)
-        circularRingSlider.setValues(initialValue: arrValues[withOldTemperature], minValue: arrValues[0], maxValue: arrValues[arrValues.count - 1])
-    }
     
     func navigationSetup() {
         configurationTitleAndBack(title: "Device 1", imageName: "in_leftPrimary")
@@ -121,57 +89,41 @@ class DeviceDetailsViewController: BaseViewController, dateRangeSelectionViewCon
         navigationItem.rightBarButtonItems = [getbarButtons(image: "in_gear", setTag: 1)]
     }
     
-    func setCircularRingSliderColor() {
-        circularRingSlider.delegate = self
-        let indexOfValue = 221
-        switchOn(withOldTemperature: 221)
-        let vividColors: [CGColor] = [
-            appConfig.appColors.gradientOne.cgColor,
-            appConfig.appColors.gradientTwo.cgColor,
-            appConfig.appColors.gradientThree.cgColor,
-            UIColor.red.cgColor
-        ]
-
-        circularRingSlider.setArrayValues(labelValues: arrValues, currentIndex: indexOfValue)
-        circularRingSlider.setCircluarRingColor(innerCirlce: appConfig.appColors.circleTrack, outerCircle: UIColor.red)
-        circularRingSlider.setProgressLayerColor(colors:vividColors)
-        circularRingSlider.setKnobOfSlider(knobSize: 40, knonbImage: UIImage(named: "iconKnobRed")!)
-        circularRingSlider.setCircularRingWidth(innerRingWidth: 20, outerRingWidth: 20)
-    }
+    
     
     func xibRegisterations() {
         CollectionMode.register(UINib(nibName: "ModeTypesCell", bundle: nil), forCellWithReuseIdentifier: "ModeTypesCell")
     }
     
+    
     //------------------------------------------
-    //MARK: - Action Methods -
-    @IBAction func btnFanSpeedTapped(_ sender: UIButton) {
-        dropDown.show()
-    }
-    @IBAction func btnPowerSwitchTapped(_ sender: UIButton) {
-        if btnPowerSwitch.isSelected {
-            switchOff()
-        } else {
-            switchOn(withOldTemperature: 22)
-        }
+    //MARK: - Custom Delegates
+    func temperatureDidUpdate(temperature: Double) {
+        print(temperature)
     }
     
-    @objc func btnAlertTapped(sender: UIButton) {
+    func powerBtnClicked() {
+        print("Power button Clicked")
+    }
+    
+    func selectedRanges(from: Date, toDate: Date) {
+        self.fromDate = from
+        self.toDate = toDate
+    }
+    
+    func fanModeDidSelect(mode: Device.FanMode) {
+        print(mode)
+    }
+    
+    //------------------------------------------
+    //MARK: - Action Methods -
+
+    @objc func btnBarItemGearTapped(sender: UIButton) {
         let initiliazeVC : DeviceSettingsViewController = Utilities.viewController(name: "DeviceSettingsViewController", onStoryboard: "DeviceDetails") as! DeviceSettingsViewController
         initiliazeVC.hidesBottomBarWhenPushed = true
         navigationController!.pushViewController(initiliazeVC, animated: true)
     }
-}
-//------------------------------------------
-//MARK: - Extensions -
-extension DeviceDetailsViewController: PBCircularRingSliderDelegate {
-    func controlValueUpdated(value: CGFloat) {
-        if value <= 0 {
-            btnChangeFanSpeed.setTitle("Off".localize(), for: .normal)
-        } else {
-            btnChangeFanSpeed.setTitle((dropDown.selectedItem == nil) ? "Min".localize() : dropDown.selectedItem , for: .normal)
-        }
-    }
+    
 }
 
 //------------------------------------------
@@ -229,6 +181,7 @@ extension DeviceDetailsViewController: UICollectionViewDelegate, UICollectionVie
         present(initiliazeVC, animated: true, completion: nil)
     }
 }
+
 //------------------------------------------
 //MARK: - Timezone conversion -
 extension Date {
@@ -237,11 +190,12 @@ extension Date {
         return Date(timeInterval: seconds, since: self)
     }
 }
+
 extension UIView {
     func fadeTransition(_ duration:CFTimeInterval) {
         let animation = CATransition()
         animation.timingFunction = CAMediaTimingFunction(name:
-            CAMediaTimingFunctionName.easeInEaseOut)
+                                                            CAMediaTimingFunctionName.easeInEaseOut)
         animation.type = CATransitionType.fade
         animation.duration = duration
         layer.add(animation, forKey: CATransitionType.fade.rawValue)
