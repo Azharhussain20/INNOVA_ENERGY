@@ -1,0 +1,6 @@
+framework module Pods_Innova {
+  umbrella header "Pods-Innova-umbrella.h"
+
+  export *
+  module * { export * }
+}
