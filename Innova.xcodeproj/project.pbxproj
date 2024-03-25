@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		38859E8EA8BC6973EECC1976 /* Pods_Innova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4A02CCEB962AA655091541 /* Pods_Innova.framework */; };
 		9E2C784E2B66A0870007A26B /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2C784D2B66A0870007A26B /* Alerts.swift */; };
+		9EAE2B942BAECE5400A1C0EC /* TimeLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE2B922BAECE5400A1C0EC /* TimeLineCell.swift */; };
+		9EAE2B952BAECE5400A1C0EC /* TimeLineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EAE2B932BAECE5400A1C0EC /* TimeLineCell.xib */; };
 		C196E4512B7CFEBD00BB89DC /* GreenTextBorderlessButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196E4502B7CFEBD00BB89DC /* GreenTextBorderlessButton.swift */; };
 		CB024D942B97250900082277 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB024D932B97250900082277 /* PersonDetailsViewController.swift */; };
 		CB024D962B972D7B00082277 /* MoveDeviceToRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB024D952B972D7B00082277 /* MoveDeviceToRoomViewController.swift */; };
@@ -109,6 +111,8 @@
 /* Begin PBXFileReference section */
 		086D0AFE8630B4A2CDCBEAE7 /* Pods-Innova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Innova.release.xcconfig"; path = "Target Support Files/Pods-Innova/Pods-Innova.release.xcconfig"; sourceTree = "<group>"; };
 		9E2C784D2B66A0870007A26B /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		9EAE2B922BAECE5400A1C0EC /* TimeLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineCell.swift; sourceTree = "<group>"; };
+		9EAE2B932BAECE5400A1C0EC /* TimeLineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeLineCell.xib; sourceTree = "<group>"; };
 		C196E4502B7CFEBD00BB89DC /* GreenTextBorderlessButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenTextBorderlessButton.swift; sourceTree = "<group>"; };
 		CB024D932B97250900082277 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
 		CB024D952B972D7B00082277 /* MoveDeviceToRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveDeviceToRoomViewController.swift; sourceTree = "<group>"; };
@@ -646,6 +650,8 @@
 			children = (
 				CB5394092BAD5B80002886F4 /* DaysCell.swift */,
 				CB53940A2BAD5B80002886F4 /* DaysCell.xib */,
+				9EAE2B922BAECE5400A1C0EC /* TimeLineCell.swift */,
+				9EAE2B932BAECE5400A1C0EC /* TimeLineCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -847,6 +853,7 @@
 				CB303C422B60FC3D00B9A770 /* LaunchScreen.storyboard in Resources */,
 				CBB8E4962B9880FA00F8F716 /* TemperatureCell.xib in Resources */,
 				CB5393FF2BAD4AE5002886F4 /* SeasonsCell.xib in Resources */,
+				9EAE2B952BAECE5400A1C0EC /* TimeLineCell.xib in Resources */,
 				CBB8E47E2B9880D300F8F716 /* DeviceDetails.storyboard in Resources */,
 				CBB8E48A2B9880E800F8F716 /* Settings.storyboard in Resources */,
 				CBB8E49A2B9880FF00F8F716 /* SingleRoom.storyboard in Resources */,
@@ -954,6 +961,7 @@
 				CBB8E45A2B98375400F8F716 /* TemperatureManagerViewController.swift in Sources */,
 				CB262F2C2B68C90200FD2E3A /* CalenderViewController.swift in Sources */,
 				CB49F2582B6B68C600FBE709 /* HeaderSupplementaryView.swift in Sources */,
+				9EAE2B942BAECE5400A1C0EC /* TimeLineCell.swift in Sources */,
 				CBE78EB42BA7FDB400E68226 /* FanModeSelector.swift in Sources */,
 				CBE78EB72BA7FF3100E68226 /* TemperatureSlider.swift in Sources */,
 				CB5394012BAD5741002886F4 /* CalenderDetailsViewController.swift in Sources */,

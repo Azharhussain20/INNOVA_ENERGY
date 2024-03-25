@@ -18,7 +18,10 @@ protocol ThemeColors {
     var circleTrack: UIColor { get }
     var grayFive: UIColor { get }
     var grayTwo: UIColor { get }
-
+    var night: UIColor { get }
+    var eco: UIColor { get }
+    var outside: UIColor { get }
+    var antifreeze: UIColor { get }
 }
 
 class AppColors : ThemeColors {
@@ -34,7 +37,11 @@ class AppColors : ThemeColors {
     let circleTrack = UIColor(hexString: "#D9D9D9")
     let grayFive = UIColor(hexString: "#F8F8F8")
     var grayTwo = UIColor(hexString: "#CACACA")
-
+    var night = UIColor(hexString: "##264653")
+    var eco = UIColor(hexString: "#E9C46A")
+    var outside = UIColor(hexString: "#F4A261")
+    var antifreeze = UIColor(hexString: "#D03E1A")
+    
     let gradientOne = UIColor(red: 0/255, green: 131/255, blue: 117/255, alpha: 1.0)
     let gradientTwo = UIColor(red: 142/255, green: 177/255, blue: 124/255, alpha: 1.0)
     let gradientThree = UIColor(red: 244/255, green: 162/255, blue: 97/255, alpha: 1.0)
